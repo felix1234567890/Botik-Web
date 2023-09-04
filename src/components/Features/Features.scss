@@ -1,0 +1,77 @@
+@import "../../styles/styles.scss";
+
+.features {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+    h2 {
+      width: 60%;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    button {
+      margin-bottom: 3rem;
+    }
+
+    &_boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .features-box {
+        display: flex;
+        padding: 20px;
+        width: 70%;
+
+        @media (max-width: 768px) {
+          padding: 5px;
+          width: 100%;
+        }
+
+        .icon-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 0 0 80px;
+          margin-right: 50px;
+          border-radius: 8px;
+          border: 1px solid #e2e8f0;
+          background: #fff;
+          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+          height: 80px;
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .text-aligning {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        p {
+          position: relative;
+          border-bottom: 1px solid #e2e8f0;
+          padding-bottom: 50px;
+          @media (max-width: 768px) {
+            padding-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}

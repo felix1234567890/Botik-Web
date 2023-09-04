@@ -1,0 +1,134 @@
+@import "../../styles/styles.scss";
+
+.models {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+
+    h2 {
+      width: 80%;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    .ptext {
+      width: 72%;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 15px;
+
+      @media (max-width: 600px) {
+        gap: 20px;
+      }
+      .card {
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+        background: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+        padding: 30px 20px;
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        transition: transform 0.3s ease-in-out;
+
+        @media (max-width: 1325px) {
+          width: 48%;
+        }
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
+
+        .title_risk {
+          display: flex;
+          gap: 10px;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+
+          .mostPopular {
+            color: #017a5b;
+            font-weight: 700;
+          }
+
+          h5 {
+            font-family: $big-font;
+            font-size: 19px;
+            color: $color-black;
+          }
+
+          h6 {
+            font-family: $big-font;
+            font-size: 14px;
+            color: $color-black;
+            margin-right: 6px;
+          }
+
+          .risk-circles {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+
+          .risk-circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 3px;
+          }
+        }
+
+        p {
+          font-family: $small-font;
+          font-size: $text-mini;
+          color: $color-black;
+        }
+
+        &_buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            padding: 8px 12px;
+          }
+          .info {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border-color: #107596;
+            color: #107596;
+            .icon {
+              color: #94a3b8;
+            }
+            &:hover {
+              background: #e8edfb;
+              color: $primary-green;
+              border-color: $primary-green;
+            }
+          }
+        }
+      }
+
+      .card.most-popular {
+        transform: scaleY(1.09);
+        @media (max-width: 600px) {
+          transform: scaleY(1) scaleX(1.05);
+        }
+      }
+    }
+  }
+}

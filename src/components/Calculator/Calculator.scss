@@ -1,0 +1,151 @@
+@import "../../styles/styles.scss";
+
+.calculator {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #fff;
+
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    .title {
+      font-family: $big-font;
+      font-size: $h4-size;
+      color: $color-black;
+      font-style: normal;
+      text-align: center;
+      margin-top: 5rem;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    .btn-next {
+      margin-bottom: 3rem;
+    }
+
+    &_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      gap: 2rem;
+
+      @media (max-width: 768px) {
+        gap: 0;
+      }
+
+      &_row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 2%;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .input-group {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 35%;
+          padding: 14px 0px 14px 16px;
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+
+          label {
+            margin-bottom: 7px;
+          }
+
+          select,
+          input {
+            background: #fff;
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+          }
+
+          .input-icon {
+            background: url("../../assets/dollarIcon.svg");
+            background-repeat: no-repeat, repeat;
+            background-position: right 1.2em top 50%, 0 0;
+          }
+
+          input[type="date"]::-webkit-calendar-picker-indicator {
+            background: url("../../assets/calendar.svg");
+            padding: 6px;
+          }
+
+          select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background-image: url("../../assets/dropdownarrow.svg");
+            background-repeat: no-repeat, repeat;
+            background-position: right 1.2em top 50%, 0 0;
+          }
+
+          select::-ms-expand {
+            display: none;
+          }
+
+          option {
+            font-family: $small-font;
+            font-size: $text-mini;
+            color: #0f172a;
+            border: 0.5px solid #cbd5e1;
+            background-color: #fff;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05);
+            &:hover {
+              background-color: #f8fafc;
+            }
+          }
+        }
+      }
+    }
+
+    &_earnings {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #017a5b;
+      width: 70%;
+      gap: 2rem;
+      margin: 0 auto;
+      text-align: center;
+      
+      &.show {
+        display: flex;
+      }
+
+      .earnings_title,
+      .earnings {
+        font-family: $big-font;
+        font-size: $h4-size;
+      }
+
+      .earnings_title {
+        color: #35ffcb;
+        margin-top: 3rem;
+      }
+
+      .earnings {
+        color: #ffffff;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
