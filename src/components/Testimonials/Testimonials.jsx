@@ -2,7 +2,9 @@ import React from "react";
 import { testimonialsInfo } from "../../json/data";
 import TestiominalsCard from "./TestiominalsCard";
 import "./Testimonials.scss";
-import Marquee from "react-fast-marquee";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 
 function Testimonials() {
   const testimonialsCardComponent = testimonialsInfo.map(
@@ -23,9 +25,18 @@ function Testimonials() {
           User testimonials vero virtutes iacere omnis necesse est voluptate
           dominante
         </h2>
-        <div className="slider">
-          <Marquee speed={150}>{testimonialsCardComponent}</Marquee>
-        </div>
+        <AliceCarousel
+          items={testimonialsCardComponent}
+          autoPlay
+          autoPlayStrategy="none"
+          autoPlayInterval={1000}
+          animationDuration={1000}
+          infinite
+          touchTracking={false}
+          disableDotsControls
+          disableButtonsControls
+          autoHeight
+        />
       </div>
     </div>
   );
