@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import logo from "../../assets/logo.svg";
@@ -39,9 +39,9 @@ function Navbar() {
     <>
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
-          <Link to="/">
+          <NavLink to="/">
             <img alt="logo" src={logo} />
-          </Link>
+          </NavLink>
           <ul>
             {navLinks.map((link, index) => (
               <li key={index}>
