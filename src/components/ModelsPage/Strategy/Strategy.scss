@@ -1,9 +1,9 @@
-@import "../../styles/styles.scss";
+@import "../../../styles/styles.scss";
 
-.features {
+.strategy {
   width: 100%;
   min-height: 100vh;
-  background-color: #f8fafc;
+  background-color: #fff;
   &_container {
     margin: auto;
     max-width: 85%;
@@ -11,34 +11,58 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 100px;
 
-    h2 {
+    h1 {
       width: 60%;
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 100px;
       @media (max-width: 768px) {
-        width: 100%
+        width: 100%;
       }
     }
 
-    button {
-      margin-bottom: 3rem;
+    &_bottomSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+
+      button {
+        margin-bottom: 100px;
+      }
     }
 
     &_boxes {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
+      gap: 150px;
 
-      .features-box {
+      @media (max-width: 768px) {
+        gap: 30px;
+      }
+
+
+      .strategy-box {
         display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 30px;
         padding: 20px;
-        width: 70%;
+        width: 30%;
+
+        @media (max-width: 1150px) {
+          width: 40%;
+        }
+
+        @media (max-width: 890px) {
+          width: 35%;
+        }
 
         @media (max-width: 768px) {
-          padding: 5px;
           width: 100%;
         }
 
@@ -46,13 +70,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          flex: 0 0 80px;
           margin-right: 50px;
           border-radius: 8px;
           border: 1px solid #e2e8f0;
           background: #fff;
           box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
           height: 80px;
+          width: 80px;
           svg {
             width: 40px;
             height: 40px;
@@ -63,15 +87,10 @@
           display: flex;
           justify-content: flex-start;
           flex-direction: column;
-          gap: 20px;
-        }
+          gap: 30px;
 
-        p {
-          position: relative;
-          border-bottom: 1px solid #e2e8f0;
-          padding-bottom: 50px;
-          @media (max-width: 768px) {
-            padding-bottom: 25px;
+          p {
+            text-align: left;
           }
         }
       }

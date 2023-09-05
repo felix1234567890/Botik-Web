@@ -18,6 +18,9 @@
       text-align: center;
       width: 65%;
       margin-top: 5rem;
+      @media (max-width: 768px) {
+        width: 100%
+      }
     }
 
     .alice-carousel {

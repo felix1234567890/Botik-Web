@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./Calculator.scss";
 import { models_info } from "../../json/data.js";
 
-const Calculator = () => {
+const Calculator = ({ backgroundColor }) => {
   const [investmentAmount, setInvestmentAmount] = useState("");
   const [profit, setProfit] = useState(null);
   const [showEarnings, setShowEarnings] = useState(false);
+  
+  document.documentElement.style.setProperty('--calculator-background-color', backgroundColor);
 
   const handleInvestmentChange = (event) => {
     const inputValue = event.target.value;
@@ -20,7 +22,8 @@ const Calculator = () => {
     const calculatedProfit = 3870.36636;
     const parts = calculatedProfit.toFixed(2).toString().split(".");
     const formattedInteger = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    const formattedProfit = parts.length === 2 ? `${formattedInteger}.${parts[1]}` : formattedInteger;
+    const formattedProfit =
+      parts.length === 2 ? `${formattedInteger}.${parts[1]}` : formattedInteger;
     setProfit(formattedProfit);
     setShowEarnings(true);
   };
@@ -36,7 +39,7 @@ const Calculator = () => {
                 Model
               </label>
               <select id="models" name="models" required>
-                <option value="" selected style={{ display: "none" }}>
+                <option value="" style={{ display: "none" }}>
                   Select a Model
                 </option>
                 {models_info.map((model, index) => (
@@ -56,7 +59,7 @@ const Calculator = () => {
                 name="investment"
                 placeholder="Investment Amount"
                 className="input-icon"
-                maxlength="20"
+                maxLength="20"
                 value={investmentAmount}
                 onChange={handleInvestmentChange}
                 required

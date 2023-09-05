@@ -69,6 +69,7 @@ input:focus {
   font-family: $big-font;
   font-size: $h1-size;
   color: $color-black;
+  font-weight: 400;
   @media (max-width: 1100px) {
     font-size: 48px;
   }
@@ -82,6 +83,7 @@ input:focus {
   font-family: $small-font;
   font-size: $text-normal;
   color: $small-font-color;
+  font-weight: 400;
   @media (max-width: 500px) {
     font-size: 16px;
   }
@@ -91,12 +93,14 @@ input:focus {
   font-family: $small-font;
   font-size: $text-mini;
   color: $small-font-color;
+  font-weight: 400;
 }
 
 .h2Regular {
   font-family: $big-font;
   font-size: $h2-size;
   color: $color-black;
+  font-weight: 400;
   @media (max-width: 1100px) {
     font-size: 30px;
   }
@@ -106,6 +110,7 @@ input:focus {
   font-family: $big-font;
   font-size: $h5-size;
   color: $color-black;
+  font-weight: 400;
   @media (max-width: 1100px) {
     font-size: 19px;
   }

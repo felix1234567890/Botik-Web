@@ -11,7 +11,7 @@
     <>
       <Hero />
       <Models />
-      <Calculator />
+      <Calculator backgroundColor="#FFF"/>
       <Features />
       <Testimonials />
       <BlogLanding />

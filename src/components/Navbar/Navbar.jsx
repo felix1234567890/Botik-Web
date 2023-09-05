@@ -47,7 +47,7 @@ function Navbar() {
               <li key={index}>
                 <NavLink
                   to={link.to}
-                  activeClassName="active"
+                  activeclassname="active"
                   isActive={() => currentLocation === link.to}
                 >
                   {link.text}
@@ -75,7 +75,7 @@ function Navbar() {
             <li key={index} onClick={openMobile}>
               <NavLink
                 to={link.to}
-                activeClassName="active"
+                activeclassname="active"
                 isActive={() => currentLocation === link.to}
               >
                 {link.text}
