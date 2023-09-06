@@ -16,6 +16,7 @@ const ModelsList = () => {
           {models_info.map((model, index) => (
             <ModelsListCard
               key={index}
+              id={`${model.subtitle}`}
               title={model.subtitle}
               risk={model.risk}
               text={model.text}

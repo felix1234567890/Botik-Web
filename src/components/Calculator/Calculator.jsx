@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Calculator.scss";
 import { models_info } from "../../json/data.js";
 
-const Calculator = ({ backgroundColor }) => {
+const Calculator = ({ backgroundColor, selectedModelId }) => {
   const [investmentAmount, setInvestmentAmount] = useState("");
   const [profit, setProfit] = useState(null);
   const [showEarnings, setShowEarnings] = useState(false);
@@ -38,7 +38,7 @@ const Calculator = ({ backgroundColor }) => {
               <label htmlFor="models" className="paragraphs">
                 Model
               </label>
-              <select id="models" name="models" required>
+              <select id="models" name="models" required defaultValue={selectedModelId}>
                 <option value="" style={{ display: "none" }}>
                   Select a Model
                 </option>

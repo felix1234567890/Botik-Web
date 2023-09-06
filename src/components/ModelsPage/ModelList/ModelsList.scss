@@ -109,9 +109,9 @@
 
         &_buttons {
           display: flex;
-          align-items: center;
+          align-items: stretch;
           gap: 10px;
-          button {
+          a {
             padding: 8px 12px;
           }
           .info {
