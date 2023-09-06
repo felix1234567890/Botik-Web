@@ -30,7 +30,7 @@ const AboutModel = ({ firstchoice, secondchoice, thirdchoice }) => {
             </li>
           ))}
         </ul>
-        {selectedChoice === "General model info" && (
+        {selectedChoice === firstchoice && (
           <p className="subheading">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat
             aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo,
@@ -42,7 +42,7 @@ const AboutModel = ({ firstchoice, secondchoice, thirdchoice }) => {
           </p>
         )}
 
-        {selectedChoice === "Performance table" && (
+        {selectedChoice === secondchoice && (
           <p className="subheading">
             Transfer idem ad modestiam vel temperantiam, quae est moderatio
             cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus
@@ -53,7 +53,7 @@ const AboutModel = ({ firstchoice, secondchoice, thirdchoice }) => {
           </p>
         )}
 
-        {selectedChoice === "Graph" && (
+        {selectedChoice === thirdchoice && (
           <p className="subheading">
             Primum Theophrasti, Strato, physicum se voluit; Sed quid ages
             tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur
