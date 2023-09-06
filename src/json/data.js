@@ -417,61 +417,69 @@ export const features_info = [
 
 export const testimonialsInfo = [
   {
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     name: "Name Surname",
-    text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui."
+    text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
     name: "Name Surname",
-    text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui."
+    text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
     name: "Name Surname",
-    text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui."
-  }
-]
+    text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui.",
+  },
+];
 
 export const Blogs = [
   {
-    photo: "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     title: "Lorem ipsum dolor sit",
     category: "category",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1639728758333-1deb626aab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1639728758333-1deb626aab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
     title: "Lorem ipsum dolor sit",
     category: "category",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1631758236057-0aedf1bc584d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1631758236057-0aedf1bc584d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
     title: "Lorem ipsum dolor sit",
     category: "category",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1640340434863-6932029a76ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1640340434863-6932029a76ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
     title: "Lorem ipsum dolor sit",
     category: "category",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     title: "Lorem ipsum dolor sit",
     category: "category",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
   {
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    photo:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     title: "Lorem ipsum dolor sit",
     category: "category",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.",
   },
-]
-
+];
 
 export const strategy_info = [
   {

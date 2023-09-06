@@ -7,12 +7,21 @@ function Navbar() {
   const [sticky, setSticky] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [currentLocation, setCurrentLocation] = useState("");
+  const [prevLocation, setPrevLocation] = useState("");
   const location = useLocation();
 
   useEffect(() => {
+    setPrevLocation(currentLocation);
     setCurrentLocation(location.pathname);
-    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-  }, [location]);
+
+    if (prevLocation !== location.pathname) {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location, currentLocation, prevLocation]);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
 
   const handleScroll = () => {
     if (window.scrollY > 150) {
@@ -48,8 +57,9 @@ function Navbar() {
               <li key={index}>
                 <NavLink
                   to={link.to}
-                  activeclassname="active"
+                  activeClassName="active"
                   isActive={() => currentLocation === link.to}
+                  onClick={scrollToTop}
                 >
                   {link.text}
                 </NavLink>
@@ -76,7 +86,7 @@ function Navbar() {
             <li key={index} onClick={openMobile}>
               <NavLink
                 to={link.to}
-                activeclassname="active"
+                activeClassName="active"
                 isActive={() => currentLocation === link.to}
               >
                 {link.text}
