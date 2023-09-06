@@ -11,6 +11,7 @@ function Navbar() {
 
   useEffect(() => {
     setCurrentLocation(location.pathname);
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, [location]);
 
   const handleScroll = () => {

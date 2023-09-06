@@ -1,0 +1,51 @@
+@import "../../../styles/styles.scss";
+
+.pricing {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #fff;
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    h2 {
+      width: 50%;
+      text-align: center;
+      margin-top: 150px;
+      font-weight: 400;
+
+      .price {
+        font-weight: 700;
+      }
+
+      .spancolor {
+        color: #017A5B;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    &_buttons {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 10px;
+      margin-bottom: 150px;
+
+      .pricingbutton {
+        color: #02B989;
+        &:hover {
+            background: #e8edfb;
+            border-color: #02B989;
+          }
+      }
+    }
+  }
+}

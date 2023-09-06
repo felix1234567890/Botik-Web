@@ -1,0 +1,43 @@
+@import "../../../styles/styles.scss";
+
+.plan {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #F8FAFC;
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      margin-top: 100px;
+      font-weight: 400;
+    }
+
+    p {
+        width: 62%;
+        text-align: center;  
+    }
+
+    &_buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 100px;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+    }
+  }
+}
