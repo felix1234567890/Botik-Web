@@ -1,0 +1,32 @@
+@import "../../../styles/styles.scss";
+
+.abouthero {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      width: 83%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .aboutparagraph {
+      margin-top: 10rem;
+    }
+  }
+}

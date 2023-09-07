@@ -80,17 +80,22 @@ const PricingTable = () => {
 
                                   return (
                                     <tr key={key}>
-                                      <div className="firstrow">
-                                        <td className="titleText">{name}</td>
-                                        <td className="priceText">
-                                          {isLastItemInGroup
-                                            ? `${formattedValueMin} + €`
-                                            : `${formattedValueMin} - ${formattedValueMax} €`}
-                                        </td>
-                                      </div>
+                                      <td>
+                                        <div className="firstrow">
+                                          <span className="titleText">
+                                            {name}
+                                          </span>
+                                          <span className="priceText">
+                                            {isLastItemInGroup
+                                              ? `${formattedValueMin} + €`
+                                              : `${formattedValueMin} - ${formattedValueMax} €`}
+                                          </span>
+                                        </div>
+                                      </td>
                                       <td className="costText">{`€ ${formattedCost}`}</td>
                                     </tr>
                                   );
+                                  
                                 }
                                 return null;
                               }
