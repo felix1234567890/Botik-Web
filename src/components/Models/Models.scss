@@ -2,7 +2,7 @@
 
 .models {
   width: 100%;
-  min-height: 100vh;
+  min-height: 95vh;
   background-color: #f8fafc;
   &_container {
     margin: auto;
@@ -11,25 +11,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8rem;
+    gap: 5rem;
 
     h2 {
       width: 80%;
       text-align: center;
       margin-top: 5rem;
       @media (max-width: 768px) {
-        width: 100%
+        width: 100%;
       }
     }
 
     .ptext {
       width: 72%;
       text-align: center;
-      margin-bottom: 3rem;
       @media (max-width: 768px) {
-        width: 100%
+        width: 100%;
       }
     }
+
     .cards {
       display: flex;
       flex-wrap: wrap;

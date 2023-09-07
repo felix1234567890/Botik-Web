@@ -676,3 +676,114 @@ export const strategy_info = [
     text: "Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui.",
   },
 ];
+
+export const pricing = [
+  {
+    category: "Optim",
+    title: "Active",
+    bronze: {
+      name: "Bronze",
+      valueMin: "500",
+      valueMax: "14999",
+      cost: "40",
+    },
+    silver: {
+      name: "Silver",
+      valueMin: "15000",
+      valueMax: "49999",
+      cost: "100",
+    },
+    gold: {
+      name: "Gold",
+      valueMin: "50000",
+      valueMax: "299999",
+      cost: "400",
+    },
+    platinum: {
+      name: "Platinum",
+      valueMin: "300000",
+      cost: "1000",
+    },
+  },
+  {
+    category: "Optim",
+    title: "Fusion",
+    bronze: {
+      name: "Bronze",
+      valueMin: "500",
+      valueMax: "14999",
+      cost: "40",
+    },
+    silver: {
+      name: "Silver",
+      valueMin: "15000",
+      valueMax: "49999",
+      cost: "100",
+    },
+    gold: {
+      name: "Gold",
+      valueMin: "50000",
+      valueMax: "299999",
+      cost: "400",
+    },
+    platinum: {
+      name: "Platinum",
+      valueMin: "300000",
+      cost: "1000",
+    },
+  },
+  {
+    category: "Hybrid",
+    title: "Mosaic",
+    bronze: {
+      name: "Bronze",
+      valueMin: "500",
+      valueMax: "14999",
+      cost: "60",
+    },
+    silver: {
+      name: "Silver",
+      valueMin: "15000",
+      valueMax: "49999",
+      cost: "150",
+    },
+    gold: {
+      name: "Gold",
+      valueMin: "50000",
+      valueMax: "299999",
+      cost: "600",
+    },
+    platinum: {
+      name: "Platinum",
+      valueMin: "300000",
+      cost: "1500",
+    },
+  },
+  {
+    category: "Hybrid",
+    title: "Capital",
+    bronze: {
+      name: "Bronze",
+      valueMin: "500",
+      valueMax: "14999",
+      cost: "60",
+    },
+    silver: {
+      name: "Silver",
+      valueMin: "15000",
+      valueMax: "49999",
+      cost: "150",
+    },
+    gold: {
+      name: "Gold",
+      valueMin: "50000",
+      valueMax: "299999",
+      cost: "600",
+    },
+    platinum: {
+      name: "Platinum",
+      valueMin: "300000",
+      cost: "1500",
+    },
+  },
+];

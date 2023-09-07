@@ -3,7 +3,7 @@ import { models_info } from "../../json/data";
 import Card from "./Card";
 import "./Models.scss";
 
-const Models = () => {
+const Models = ({ enableButton }) => {
   return (
     <div className="models">
       <div className="models_container">
@@ -13,14 +13,14 @@ const Models = () => {
         </h2>
         <div className="cards">
           {models_info.map((model, index) => (
-          <Card
-            key={index}
-            title={model.title}
-            risk={model.risk}
-            text={model.text}
-            mostPopular={model.most_popular}
-          />
-        ))}
+            <Card
+              key={index}
+              title={model.title}
+              risk={model.risk}
+              text={model.text}
+              mostPopular={model.most_popular}
+            />
+          ))}
         </div>
         <p className="subheading ptext">
           Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius,
@@ -28,6 +28,12 @@ const Models = () => {
           multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura
           sane
         </p>
+
+        {enableButton ? (
+          <button type="button" className="btn-bg">
+            Sign up now <i className="fa-solid fa-arrow-right"></i>
+          </button>
+        ) : null}
       </div>
     </div>
   );

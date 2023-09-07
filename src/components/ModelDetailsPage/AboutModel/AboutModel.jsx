@@ -18,7 +18,7 @@ const AboutModel = ({ firstchoice, secondchoice, thirdchoice }) => {
           Transfer idem ad modestiam vel temperantiam, quae est moderatio
           cupiditatum rationi oboediens
         </h2>
-        <ul className="about_container_menu">
+        <ul>
           {choices.map((link, index) => (
             <li key={index}>
               <NavLink
