@@ -1,0 +1,30 @@
+{
+    "models_info": [
+      {
+        "title": "Model 1",
+        "subtitle": "Optim Active",
+        "risk": 2,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi"
+      },
+      {
+        "title": "Model 2",
+        "subtitle": "Optim Fusion",
+        "risk": 3,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi",
+        "most_popular": true
+      },
+      {
+        "title": "Model 3",
+        "subtitle": "Hybrid Mosaic",
+        "risk": 4,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi"
+      },
+      {
+        "title": "Model 4",
+        "subtitle": "Hybrid Capital",
+        "risk": 5,
+        "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi"
+      }
+    ]
+  }
+  

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Calculator.scss";
-import { models_info } from "../../json/data.js";
+import { models_info } from "../../json/data";
 
 const Calculator = ({ backgroundColor, selectedModelId }) => {
   const [investmentAmount, setInvestmentAmount] = useState("");
