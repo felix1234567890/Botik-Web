@@ -7,8 +7,6 @@ const Calculator = ({ backgroundColor, selectedModelId }) => {
   const [profit, setProfit] = useState(null);
   const [showEarnings, setShowEarnings] = useState(false);
   
-  document.documentElement.style.setProperty('--calculator-background-color', backgroundColor);
-
   const handleInvestmentChange = (event) => {
     const inputValue = event.target.value;
     if (/^\d*\.?\d+$/.test(inputValue) && parseFloat(inputValue) >= 0) {
@@ -29,7 +27,7 @@ const Calculator = ({ backgroundColor, selectedModelId }) => {
   };
 
   return (
-    <div className="calculator">
+    <div className="calculator" style={{background: backgroundColor}}>
       <div className="calculator_container">
         <h4 className="title">Dolor sit kalkulator</h4>
         <form className="calculator_container_form">

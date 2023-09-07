@@ -20,10 +20,6 @@ function Footer() {
     { to: "/cookie", text: "Cookie policy" },
   ];
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <footer>
@@ -34,7 +30,7 @@ function Footer() {
           <ul>
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink to={link.to} onClick={scrollToTop}>
+                <NavLink to={link.to}>
                   {link.text}
                 </NavLink>
               </li>

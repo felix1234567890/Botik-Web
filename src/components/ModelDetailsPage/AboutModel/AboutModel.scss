@@ -44,16 +44,23 @@
         }
 
         &.selected {
-            color: #017A5B;
-            border-color: #017A5B;
+          color: #017a5b;
+          border-color: #017a5b;
         }
       }
     }
 
-    p {
+    .text-box {
+      align-items: center;
+      justify-content: center;
+      p {
         width: 83%;
         text-align: left;
         margin-bottom: 120px;
+        @media (max-width: 500px) {
+          width: 90%;
+        }
+      }
     }
   }
 }

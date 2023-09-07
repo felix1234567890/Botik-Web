@@ -1,37 +1,36 @@
+import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
 import "./Navbar.scss";
 import logo from "../../assets/logo.svg";
 
-function Navbar() {
+const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const [currentLocation, setCurrentLocation] = useState("");
-  const [prevLocation, setPrevLocation] = useState("");
   const location = useLocation();
+  const [currentLocation, setCurrentLocation] = useState("");
 
   useEffect(() => {
-    setPrevLocation(currentLocation);
     setCurrentLocation(location.pathname);
+  }, [location]);
 
-    if (prevLocation !== location.pathname) {
+  useEffect(() => {
+    if (location.pathname !== currentLocation) {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
-  }, [location, currentLocation, prevLocation]);
+  }, [location, currentLocation]);
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
 
   const handleScroll = () => {
-    if (window.scrollY > 150) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
+    setSticky(window.scrollY > 150);
   };
 
-  window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const openMobile = () => {
     setMobile(!mobile);
@@ -45,6 +44,7 @@ function Navbar() {
     { to: "/contact", text: "Contact" },
   ];
 
+
   return (
     <>
       <nav className={sticky ? "sticky-nav" : ""}>
@@ -55,9 +55,7 @@ function Navbar() {
           <ul>
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink to={link.to} onClick={scrollToTop}>
-                  {link.text}
-                </NavLink>
+                <NavLink to={link.to}>{link.text}</NavLink>
               </li>
             ))}
           </ul>
@@ -92,6 +90,6 @@ function Navbar() {
       </div>
     </>
   );
-}
+};
 
 export default Navbar;

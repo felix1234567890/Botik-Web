@@ -1,4 +1,4 @@
-  @use "./colors.scss" as *;
+@use "./colors.scss" as *;
 @use "./typography.scss" as *;
 
 * {
@@ -25,7 +25,7 @@ input:focus {
 
 // scroll bar
 
- /* Firefox */
+/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #8e8e8e #f8fafc;
@@ -61,7 +61,6 @@ input:focus {
 *::-webkit-scrollbar-thumb:active {
   background-color: #8e8e8e;
 }
-
 
 // components
 

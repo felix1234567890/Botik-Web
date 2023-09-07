@@ -95,7 +95,6 @@ const PricingTable = () => {
                                       <td className="costText">{`€ ${formattedCost}`}</td>
                                     </tr>
                                   );
-                                  
                                 }
                                 return null;
                               }
