@@ -55,12 +55,7 @@ function Navbar() {
           <ul>
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink
-                  to={link.to}
-                  activeClassName="active"
-                  isActive={() => currentLocation === link.to}
-                  onClick={scrollToTop}
-                >
+                <NavLink to={link.to} onClick={scrollToTop}>
                   {link.text}
                 </NavLink>
               </li>
@@ -84,13 +79,7 @@ function Navbar() {
         <ul>
           {navLinks.map((link, index) => (
             <li key={index} onClick={openMobile}>
-              <NavLink
-                to={link.to}
-                activeClassName="active"
-                isActive={() => currentLocation === link.to}
-              >
-                {link.text}
-              </NavLink>
+              <NavLink to={link.to}>{link.text}</NavLink>
             </li>
           ))}
           <button className="btn-nobg" type="button">
