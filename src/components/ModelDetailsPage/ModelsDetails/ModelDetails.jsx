@@ -13,9 +13,7 @@ const riskColors = {
 
 const ModelDetails = () => {
   const { id } = useParams();
-
   const model = models_info.find((model) => model.subtitle === id);
-
   const riskColor = riskColors[model.risk] || "#32BEEB";
 
   const renderRiskCircles = (width, height) => {

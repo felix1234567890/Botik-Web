@@ -71,10 +71,12 @@ const PricingTable = () => {
                                     minimumFractionDigits: 2,
                                     maximumFractionDigits: 2,
                                   });
-
-                                  const formattedCost = parseFloat(cost)
-                                    .toFixed(2)
-                                    .replace(".", ",");
+                                  const formattedCost = parseFloat(
+                                    cost
+                                  ).toLocaleString("de-DE", {
+                                    minimumFractionDigits: 2,
+                                    maximumFractionDigits: 2,
+                                  });
 
                                   return (
                                     <tr key={key}>
