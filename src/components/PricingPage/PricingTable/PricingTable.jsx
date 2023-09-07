@@ -59,12 +59,19 @@ const PricingTable = () => {
                                     itemGroup[key];
                                   const isLastItemInGroup =
                                     keyIndex === keysArray.length - 1;
-                                  const formattedValueMin = parseFloat(valueMin)
-                                    .toFixed(2)
-                                    .replace(".", ",");
-                                  const formattedValueMax = parseFloat(valueMax)
-                                    .toFixed(2)
-                                    .replace(".", ",");
+                                  const formattedValueMin = parseFloat(
+                                    valueMin
+                                  ).toLocaleString("de-DE", {
+                                    minimumFractionDigits: 2,
+                                    maximumFractionDigits: 2,
+                                  });
+                                  const formattedValueMax = parseFloat(
+                                    valueMax
+                                  ).toLocaleString("de-DE", {
+                                    minimumFractionDigits: 2,
+                                    maximumFractionDigits: 2,
+                                  });
+
                                   const formattedCost = parseFloat(cost)
                                     .toFixed(2)
                                     .replace(".", ",");
