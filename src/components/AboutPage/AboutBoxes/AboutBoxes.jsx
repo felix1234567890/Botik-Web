@@ -7,7 +7,7 @@ const Box = ({ text }) => (
   </div>
 );
 
-const AboutBoxes = ({boxContents}) => {
+const AboutBoxes = ({ boxContents }) => {
   return (
     <div className="aboutboxes">
       <div className="aboutboxes_container">
