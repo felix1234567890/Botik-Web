@@ -30,7 +30,7 @@ const Models = ({ enableButton }) => {
         </p>
 
         {enableButton ? (
-          <button type="button" className="btn-bg">
+          <button type="button" className="btn-bg enabledbutton">
             Sign up now <i className="fa-solid fa-arrow-right"></i>
           </button>
         ) : null}

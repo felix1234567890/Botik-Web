@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./AboutModel.scss";
 
-const AboutModel = ({ choices }) => {
+const AboutModel = ({ choices, backgroundcolor }) => {
   const [selectedChoice, setSelectedChoice] = useState(choices[0].title);
 
   return (
-    <div className="about">
+    <div className="about" style={{background: backgroundcolor}}>
       <div className="about_container">
         <h2 className="h2Regular">
           Transfer idem ad modestiam vel temperantiam, quae est moderatio

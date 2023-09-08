@@ -3,7 +3,7 @@
 .abouthero {
   width: 100%;
   min-height: auto;
-  background-color: #f8fafc;
+  background: linear-gradient(to bottom, #f8fafc 55%, #fff 50%);
   &_container {
     margin: auto;
     max-width: 85%;
