@@ -1,0 +1,124 @@
+@import "../../styles/styles.scss";
+
+.contactpage {
+  width: 100%;
+  min-height: auto;
+  background: #f8fafc;
+
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    h1,
+    p {
+      text-align: center;
+    }
+
+    h1 {
+      width: 83%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    p {
+      width: 83%;
+      margin-bottom: 100px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .contactpageparagraph {
+      margin-top: 10rem;
+    }
+
+    form {
+      width: 85%;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 100px 130px;
+      gap: 20px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+      margin-bottom: 70px;
+      margin-top: 80px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 40px 20px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .input_group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 7px;
+
+        select,
+        input,
+        textarea {
+          background: #fff;
+          width: 100%;
+          padding: 14px 16px;
+          border: 1px solid #cbd5e1;
+          border-radius: 4px;
+          outline: none;
+        }
+
+        textarea {
+          resize: none;
+          height: 10rem;
+        }
+
+        select {
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+          background-image: url("../../assets/dropdownarrow.svg");
+          background-repeat: no-repeat, repeat;
+          background-position: right 1.2em top 50%, 0 0;
+        }
+
+        select::-ms-expand {
+          display: none;
+        }
+
+        .name-inputs,
+        .email-phone-inputs {
+          display: flex;
+          gap: 11px;
+
+          .name-input,
+          .email-input {
+            flex: 1;
+
+            input {
+              margin-top: 7px;
+            }
+          }
+        }
+      }
+
+      .dropdown {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.required::before {
+  content: "*";
+  margin-right: 2px;
+  color: #02b989;
+}

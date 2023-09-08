@@ -36,7 +36,7 @@ const Calculator = ({ backgroundColor, selectedModelId }) => {
               <label htmlFor="models" className="paragraphs">
                 Model
               </label>
-              <select id="models" name="models" required defaultValue={selectedModelId}>
+              <select id="models" name="models" className="paragraphs" required defaultValue={selectedModelId}>
                 <option value="" style={{ display: "none" }}>
                   Select a Model
                 </option>
@@ -56,7 +56,7 @@ const Calculator = ({ backgroundColor, selectedModelId }) => {
                 id="investment"
                 name="investment"
                 placeholder="Investment Amount"
-                className="input-icon"
+                className="input-icon paragraphs"
                 maxLength="20"
                 value={investmentAmount}
                 onChange={handleInvestmentChange}
@@ -74,6 +74,7 @@ const Calculator = ({ backgroundColor, selectedModelId }) => {
                 id="startdate"
                 name="startdate"
                 placeholder="Enter start date"
+                className="paragraphs"
                 required
               />
             </div>
@@ -86,6 +87,7 @@ const Calculator = ({ backgroundColor, selectedModelId }) => {
                 id="enddate"
                 name="enddate"
                 placeholder="Enter end date"
+                className="paragraphs"
                 required
               />
             </div>
