@@ -1,0 +1,64 @@
+@import "../../styles/styles.scss";
+
+.blogdetails {
+  width: 100%;
+  min-height: auto;
+  background: #f8fafc;
+
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    h1 {
+      width: 83%;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .breadcrumbs {
+      text-align: center;
+      margin-top: 10rem;
+      color: #94a3b8;
+    }
+
+    .date {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .blog_image {
+      text-align: center;
+      width: 85%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        border-radius: 10px;
+        object-fit: cover;
+        transform: translate3d(0, 0, 1px);
+      }
+    }
+
+    .blogText {
+      text-align: left;
+      flex-wrap: wrap;
+      width: 80%; 
+      margin-top: 70px;
+      margin-bottom: 150px;
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

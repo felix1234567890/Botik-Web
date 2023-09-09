@@ -438,46 +438,132 @@ export const testimonialsInfo = [
 
 export const Blogs = [
   {
+    date: "15.03.2023",
+    photo:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    title: "Blog Entry 1 Title",
+    category: "News",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "22.04.2023",
+    photo:
+      "https://images.unsplash.com/photo-1639728758333-1deb626aab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    title: "Blog Entry 3 Title",
+    category: "Announcements",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "30.05.2023",
+    photo:
+      "https://images.unsplash.com/photo-1631758236057-0aedf1bc584d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    title: "Blog Entry 4 Title",
+    category: "Crypto begginers",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "12.06.2023",
+    photo:
+      "https://images.unsplash.com/photo-1640340434863-6932029a76ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
+    title: "Blog Entry 5 Title",
+    category: "Academy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "02.07.2023",
     photo:
       "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     title: "Lorem ipsum dolor sit",
-    category: "category",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."
+    category: "News",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
   },
   {
+    date: "18.08.2023",
     photo:
       "https://images.unsplash.com/photo-1639728758333-1deb626aab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
-    title: "Lorem ipsum dolor sit",
-    category: "category",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."
+    title: "Blog Entry 6 Title",
+    category: "Announcements",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
   },
   {
+    date: "25.09.2023",
     photo:
       "https://images.unsplash.com/photo-1631758236057-0aedf1bc584d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
-    title: "Lorem ipsum dolor sit",
-    category: "category",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."
+    title: "Blog Entry 7 Title",
+    category: "Crypto begginers",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
   },
   {
+    date: "17.09.2023",
     photo:
       "https://images.unsplash.com/photo-1640340434863-6932029a76ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-    title: "Lorem ipsum dolor sit",
-    category: "category",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."
+    title: "Blog Entry 8 Title",
+    category: "Academy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
   },
   {
+    date: "02.07.2023",
     photo:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Lorem ipsum dolor sit",
-    category: "category",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    title: "Blog Entry 9 Title",
+    category: "News",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
   },
   {
+    date: "18.08.2023",
     photo:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    title: "Lorem ipsum dolor sit",
-    category: "category",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."
+      "https://images.unsplash.com/photo-1639728758333-1deb626aab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    title: "Blog Entry 10 Title",
+    category: "Announcements",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "25.09.2023",
+    photo:
+      "https://images.unsplash.com/photo-1631758236057-0aedf1bc584d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    title: "Blog Entry 11 Title",
+    category: "Crypto begginers",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "17.09.2023",
+    photo:
+      "https://images.unsplash.com/photo-1640340434863-6932029a76ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
+    title: "Blog Entry 12 Title",
+    category: "Academy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "02.07.2023",
+    photo:
+      "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    title: "Blog Entry 13 Title",
+    category: "News",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "18.08.2023",
+    photo:
+      "https://images.unsplash.com/photo-1639728758333-1deb626aab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    title: "Blog Entry 14 Title",
+    category: "Announcements",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "25.09.2023",
+    photo:
+      "https://images.unsplash.com/photo-1631758236057-0aedf1bc584d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+    title: "Blog Entry 15 Title",
+    category: "Crypto begginers",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
+  },
+  {
+    date: "17.09.2023",
+    photo:
+      "https://images.unsplash.com/photo-1640340434863-6932029a76ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
+    title: "Blog Entry 16 Title",
+    category: "Academy",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete. Transfer idem ad modestiam vel temperantiam, quae est moderatio cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile, quod beatissimum. Comprehensum, quod cognitum non habet? Primum Theophrasti, Strato, physicum se voluit; Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae. Omnis enim est natura diligens sui. Maximas vero virtutes iacere omnis necesse est voluptate dominante. Invidiosum nomen est, infame, suspectum. Iam contemni non poteris. Sed ille, ut dixi, vitiose."
   }
 ]
 

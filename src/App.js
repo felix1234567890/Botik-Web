@@ -9,6 +9,8 @@ import ModelsDetailsPage from "./pages/ModelsDetailsPage";
 import PricingPage from "./pages/PricingPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import BlogListPage from "./pages/BlogListPage";
+import BlogDetails from "./components/BlogList/BlogDetails";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/bloglist" element={<BlogListPage />} />
+        <Route path="/bloglist/:blogId" element={<BlogDetails />} />
       </Routes>
       {/* <Footer /> */}
     </>

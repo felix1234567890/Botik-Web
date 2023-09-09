@@ -1,0 +1,47 @@
+@import "../../styles/styles.scss";
+
+.bottomcard {
+  width: 100%;
+  min-height: auto;
+  background: #017A5B;
+
+  &_container {
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    p,h2 {
+        text-align: center;
+    }
+
+    h2 {
+      width: 33%;
+      color: #FFF;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    p {
+        margin-top: 50px;
+        color: #ffffff66;
+    }
+
+    button {
+      margin-bottom: 50px;
+      margin-top: 20px;
+      border-color: #f8fafc;
+      background: transparent;
+      color: #f8fafc;
+      border-width: 1px;
+      &:hover {
+        background: #e8edfb;
+        color: $primary-green;
+      }
+    }
+  }
+}

@@ -1,9 +1,10 @@
 @import "../../styles/styles.scss";
 
-.bloglanding {
+.bloglist {
   width: 100%;
-  min-height: 75vh;
-  background-color: #fff;
+  min-height: auto;
+  background: #f8fafc;
+
   &_container {
     margin: auto;
     max-width: 85%;
@@ -11,18 +12,57 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 30px;
 
-    h2 {
-      margin-top: 5rem;
+    h1 {
+      width: 83%;
+      text-align: center;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .blogparagraph {
+      margin-top: 10rem;
       text-align: center;
     }
 
-    button {
-      margin-bottom: 3rem;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      gap: 24px;
+
+      @media (max-width: 500px) {
+        gap: 10px;
+      }
+
+      a {
+        font-family: $small-font;
+        font-size: $text-mini;
+        color: #475569;
+        transition: 0.3s all;
+        padding-bottom: 12px;
+        border-bottom: 2px solid transparent;
+        @media (max-width: 768px) {
+          padding-bottom: 4px;
+        }
+        &:hover {
+          color: $primary-green;
+        }
+
+        &.selected {
+          color: #017a5b;
+          border-color: #017a5b;
+          font-weight: 600;
+        }
+      }
     }
 
-    &_cards {
+    .blog_grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -60,7 +100,7 @@
             height: 146px;
             border-radius: 5px 0px 0px 5px;
             object-fit: cover;
-            transform: translate3d(0, 0, 1px); 
+            transform: translate3d(0, 0, 1px);
             margin: auto;
           }
         }
@@ -92,6 +132,37 @@
             text-overflow: ellipsis;
             color: $small-font-color;
           }
+        }
+      }
+    }
+
+    .pagination {
+      margin-bottom: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      button {
+        font-family: $small-font;
+        font-weight: 400;
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #017a5b;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s all;
+
+        &.active {
+          background-color: #017a5b;
+          color: #fff;
+        }
+
+        &:hover {
+          background-color: #017a5b;
+          color: #fff;
         }
       }
     }
