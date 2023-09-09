@@ -69,7 +69,7 @@ const ModelDetails = () => {
           </div>
         </div>
       </div>
-      <Calculator selectedModelId={model.title} backgroundColor="#FFF" />
+      <Calculator selectedModelId={model.title} backgroundColor="#FFF" modelCalculator={true} />
     </>
   );
 };

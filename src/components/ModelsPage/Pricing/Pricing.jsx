@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Pricing.scss";
 
 const Pricing = () => {
@@ -11,9 +12,9 @@ const Pricing = () => {
           <span className="spancolor">$</span> per month
         </h2>
         <div className="pricing_container_buttons">
-          <button className="btn-nobg pricingbutton" type="button">
+          <Link to={'/pricing'} className="btn-nobg pricingbutton" type="button">
             View pricing table <i className="fa-solid fa-dollar-sign"></i>
-          </button>
+          </Link>
           <button className="btn-bg" type="button">
             Get Started <i className="fa-solid fa-arrow-right"></i>
           </button>

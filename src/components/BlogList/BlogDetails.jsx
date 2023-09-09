@@ -33,8 +33,9 @@ const BlogDetails = () => {
     return null
   }
 
+  const nextBlog = findNextBlogInCategory()
+
   const navigateToNextBlog = () => {
-    const nextBlog = findNextBlogInCategory()
     if (nextBlog) {
       navigate(`/bloglist/${nextBlog.title}-${nextBlog.category}`)
     }
@@ -56,7 +57,7 @@ const BlogDetails = () => {
       <div className='bottomcard'>
         <div className='bottomcard_container'>
           <p className='subheading'>Read Next</p>
-          <h2 className='h2Regular'>Lorem ipsum dolor sit amet</h2>
+          <h2 className='h2Regular'>{nextBlog.title}</h2>
           <button
             type='button'
             className='btn-nobg'

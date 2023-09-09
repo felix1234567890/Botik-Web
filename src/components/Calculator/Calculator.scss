@@ -126,6 +126,10 @@
       gap: 2rem;
       margin: 0 auto;
       text-align: center;
+
+      @media (max-width: 768px) {
+        width: 90%;
+      }
       
       &.show {
         display: flex;

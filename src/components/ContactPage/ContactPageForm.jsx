@@ -115,7 +115,7 @@ const ContactPageForm = ({ inquiryTypes }) => {
           </div>
         </form>
 
-        <p className="subheading">
+        <p className="subheading lasttext">
           Quantegis LTD (Quantegis d.o.o.) Radnička cesta 80, Zagreb, Croatia. <br />
           VAT ID: HR59864814633
         </p>

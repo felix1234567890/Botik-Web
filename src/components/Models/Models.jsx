@@ -19,6 +19,7 @@ const Models = ({ enableButton }) => {
               risk={model.risk}
               text={model.text}
               mostPopular={model.most_popular}
+              id={`${model.subtitle}`}
             />
           ))}
         </div>
