@@ -1,0 +1,73 @@
+@import "../../styles/styles.scss";
+
+.policypagecontent {
+  width: 100%;
+  height: auto;
+
+  &_container {
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .pageTitle {
+      margin-top: 10rem;
+      margin-bottom: 100px;
+    }
+
+    &_title {
+      background-color: #f8fafc;
+      width: 100%;
+      text-align: center;
+    }
+
+    &_text {
+      background-color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 150px;
+      gap: 30px;
+      padding: 0px 170px;
+      margin-top: 100px;
+
+      @media (max-width: 768px) {
+        padding: 0px 30px;
+      }
+
+      div {
+        .h4Regular {
+          text-align: left;
+          margin-bottom: 30px;
+          font-family: $big-font;
+          font-size: $h4-size;
+          color: $small-font-color;
+          font-weight: 700;
+          @media (max-width: 768px) {
+            text-align: center;
+          }
+        }
+
+        .h6Regular {
+          text-align: left;
+          margin-bottom: 30px;
+          font-family: $big-font;
+          font-size: 19px;
+          color: $small-font-color;
+          font-weight: 700;
+          @media (max-width: 768px) {
+            text-align: center;
+          }
+        }
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
