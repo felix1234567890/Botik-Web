@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Blogs } from "../../json/data";
+import { Blogs as blogs } from "../../json/data";
 import BlogLandingCard from "./BlogLandingCard";
 import "./BlogLanding.scss";
 
 const BlogLanding = () => {
-  const blogsCardComponent = Blogs.slice(0, 4).map((blog, index) => (
+  const blogsCardComponent = blogs.slice(0, 4).map((blog, index) => (
     <BlogLandingCard
       key={index}
       title={blog.title}

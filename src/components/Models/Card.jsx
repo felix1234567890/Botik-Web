@@ -1,13 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-
-const riskColors = {
-  2: "#32BEEB",
-  3: "#10B981",
-  4: "#F59E0B",
-  5: "#B91C1C",
-};
+import { riskColors } from "../../utils"
 
 const Card = ({ title, risk, text, mostPopular, id }) => {
   const riskColor = riskColors[risk] || "#32BEEB";

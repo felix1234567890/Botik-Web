@@ -1,29 +1,29 @@
 import React from "react"
 import { useParams, useNavigate } from "react-router-dom"
-import { Blogs } from "../../json/data"
+import { Blogs as blogs } from "../../json/data"
 import "./BlogDetails.scss"
 
 const BlogDetails = () => {
   const { blogId } = useParams()
   const navigate = useNavigate()
-  const selectedBlog = Blogs.find(
+  const selectedBlog = blogs.find(
     (blog) => `${blog.title}-${blog.category}` === blogId
   )
 
   const findNextBlogInCategory = () => {
-    const currentIndex = Blogs.findIndex(
+    const currentIndex = blogs.findIndex(
       (blog) => `${blog.title}-${blog.category}` === blogId
     )
 
     if (currentIndex !== -1) {
       let nextIndex = currentIndex + 1
       while (nextIndex !== currentIndex) {
-        if (nextIndex >= Blogs.length) {
+        if (nextIndex >= blogs.length) {
           nextIndex = 0
         }
 
-        if (Blogs[nextIndex].category === selectedBlog.category) {
-          return Blogs[nextIndex]
+        if (blogs[nextIndex].category === selectedBlog.category) {
+          return blogs[nextIndex]
         }
 
         nextIndex++

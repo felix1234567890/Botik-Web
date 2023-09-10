@@ -1,15 +1,19 @@
 import React, { useState } from "react"
 import "./Calculator.scss"
-import { models_info } from "../../json/data"
+import { models_info as modelsInfo } from "../../json/data"
 
-const Calculator = ({ backgroundColor, selectedModelId, modelCalculator = false }) => {
+const Calculator = ({
+  backgroundColor,
+  selectedModelId = null,
+  modelCalculator = false
+}) => {
   const [investmentAmount, setInvestmentAmount] = useState("")
   const [profit, setProfit] = useState(null)
   const [showEarnings, setShowEarnings] = useState(false)
 
   const handleInvestmentChange = (event) => {
     const inputValue = event.target.value
-    if (/^\d*\.?\d+$/.test(inputValue) && parseFloat(inputValue) >= 0) {
+    if (!isNaN(inputValue) && inputValue > 0) {
       setInvestmentAmount(inputValue)
     } else {
       setInvestmentAmount("")
@@ -47,7 +51,7 @@ const Calculator = ({ backgroundColor, selectedModelId, modelCalculator = false 
                   Select a Model
                 </option>
                 {modelCalculator
-                  ? models_info.map((model, index) => (
+                  ? modelsInfo.map((model, index) => (
                       <option
                         key={index}
                         value={model.title}
@@ -59,7 +63,7 @@ const Calculator = ({ backgroundColor, selectedModelId, modelCalculator = false 
                         {model.title}
                       </option>
                     ))
-                  : models_info.map((model, index) => (
+                  : modelsInfo.map((model, index) => (
                       <option key={index} value={model.title}>
                         {model.title}
                       </option>

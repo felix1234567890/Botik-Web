@@ -1,6 +1,6 @@
 import React from "react";
 import StrategyCard from "./StrategyCard";
-import { strategy_info } from "../../../json/data";
+import { strategy_info as strategyInfo } from "../../../json/data";
 import "./Strategy.scss";
 
 const Strategy = () => {
@@ -9,7 +9,7 @@ const Strategy = () => {
       <div className="strategy_container">
         <h1 className="title">Optim vs. Hybrid strategy</h1>
         <div className="strategy_container_boxes">
-          {strategy_info.map((strategy, index) => (
+          {strategyInfo.map((strategy, index) => (
             <StrategyCard
               key={index}
               title={strategy.title}

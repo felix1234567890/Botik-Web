@@ -68,6 +68,8 @@ const PricingTable = () => {
                                   const formattedValueMax = parseFloat(
                                     valueMax
                                   ).toLocaleString("de-DE", {
+                                    style:'currency',
+                                    currency:"EUR",
                                     minimumFractionDigits: 2,
                                     maximumFractionDigits: 2,
                                   });
@@ -88,7 +90,7 @@ const PricingTable = () => {
                                           <span className="price-text">
                                             {isLastItemInGroup
                                               ? `${formattedValueMin} + €`
-                                              : `${formattedValueMin} - ${formattedValueMax} €`}
+                                              : `${formattedValueMin} - ${formattedValueMax}`}
                                           </span>
                                         </div>
                                       </td>

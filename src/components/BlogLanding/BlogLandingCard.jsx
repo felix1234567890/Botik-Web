@@ -1,9 +1,11 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 const BlogLandingCard = ({ photo, title, category, text, id }) => {
-
+  const navigate = useNavigate()
+  
   function handleBlogClick(blogId) {
-    window.location.href = `/bloglist/${blogId}`
+    navigate(`/bloglist/${blogId}`)
   }
 
   return (

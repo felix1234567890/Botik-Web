@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Models />
+      <Models enableButton={false} />
       <Calculator backgroundColor='#FFF' />
       <Features />
       <Testimonials />

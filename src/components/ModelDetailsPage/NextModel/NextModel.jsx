@@ -1,14 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./NextModel.scss";
-import { models_info } from "../../../json/data";
+import { models_info as modelsInfo } from "../../../json/data";
 
 const NextModel = () => {
   const { id } = useParams();
-  const currentIndex = models_info.findIndex((model) => model.subtitle === id);
-  const nextIndex = (currentIndex + 1) % models_info.length;
-  const nextModel = models_info[nextIndex];
-
+  const currentIndex = modelsInfo.findIndex((model) => model.subtitle === id);
+  const nextIndex = (currentIndex + 1) % modelsInfo.length;
+  const nextModel = modelsInfo[nextIndex];
 
   const renderRiskCircles = (width, height) => {
     return Array.from({ length: nextModel.risk }, (_, index) => (

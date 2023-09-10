@@ -27,7 +27,6 @@ function App() {
     { path: "/bloglist/:blogId", component: BlogDetails },
     { path: "/privacy", component: PolicyPage },
     { path: "/terms", component: TermsPage },
-    { path: "/privacy", component: PolicyPage },
     { path: "/cookie", component: CookiePage }
   ]
   return (

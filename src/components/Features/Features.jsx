@@ -1,6 +1,6 @@
 import React from "react";
 import "./Features.scss";
-import { features_info } from "../../json/data";
+import { features_info as featuresInfo } from "../../json/data";
 import FeaturesBox from "./FeaturesBox";
 
 const Features = () => {
@@ -11,7 +11,7 @@ const Features = () => {
           Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae
         </h2>
         <div className="features_container_boxes">
-          {features_info.map((feature, index) => (
+          {featuresInfo.map((feature, index) => (
             <FeaturesBox
               key={index}
               title={feature.title}

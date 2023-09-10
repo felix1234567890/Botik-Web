@@ -32,7 +32,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const openMobile = () => {
+  const toggleMobile = () => {
     setMobile(!mobile);
   };
 
@@ -64,7 +64,7 @@ const Navbar = () => {
             <button className="btn-bg">Login</button>
             {/* mobile */}
             <i
-              onClick={openMobile}
+              onClick={toggleMobile}
               className="fa-solid fa-bars-staggered hamburger-menu"
             ></i>
           </div>
@@ -73,10 +73,10 @@ const Navbar = () => {
 
       {/* mobile nav */}
       <div className={`mobile-nav ${mobile ? "mobile-up" : ""}`}>
-        <i onClick={openMobile} className="fa-solid fa-xmark close-mobile"></i>
+        <i onClick={toggleMobile} className="fa-solid fa-xmark close-mobile"></i>
         <ul>
           {navLinks.map((link, index) => (
-            <li key={index} onClick={openMobile}>
+            <li key={index} onClick={toggleMobile}>
               <NavLink to={link.to}>{link.text}</NavLink>
             </li>
           ))}

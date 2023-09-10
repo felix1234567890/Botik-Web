@@ -1,7 +1,7 @@
 import React from "react"
 import BlogList from "../components/BlogList/BlogList"
 import BottomCard from "../components/BottomCard/BottomCard"
-import { Blogs } from "../json/data"
+import { Blogs as blogs } from "../json/data"
 
 const BlogListPage = () => {
   return (
@@ -14,10 +14,9 @@ const BlogListPage = () => {
           { title: "Crypto begginers" },
           { title: "Academy" }
         ]}
-
-        Blogs={Blogs}
+        blogs={blogs}
       />
-      <BottomCard/>
+      <BottomCard />
     </>
   )
 }

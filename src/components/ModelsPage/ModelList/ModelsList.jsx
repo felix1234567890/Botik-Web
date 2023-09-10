@@ -1,7 +1,7 @@
 import React from "react";
 import ModelsListCard from "./ModelsListCard";
 import "./ModelsList.scss";
-import { models_info } from "../../../json/data";
+import { models_info as modelsInfo } from "../../../json/data";
 
 const ModelsList = () => {
   return (
@@ -13,7 +13,7 @@ const ModelsList = () => {
           mi.
         </p>
         <div className="list">
-          {models_info.map((model, index) => (
+          {modelsInfo.map((model, index) => (
             <ModelsListCard
               key={index}
               id={`${model.subtitle}`}

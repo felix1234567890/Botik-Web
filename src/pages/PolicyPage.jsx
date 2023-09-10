@@ -1,11 +1,11 @@
 import React from "react"
 import PolicyPageContent from "../components/PolicyPageContent/PolicyPageContent"
-import privacyData from "../json/privacyData.json";
+import privacyData from "../json/privacyData.json"
 
 const PolicyPage = () => {
   return (
     <>
-      <PolicyPageContent jsonData={privacyData}/>
+      <PolicyPageContent jsonData={privacyData} />
     </>
   )
 }
