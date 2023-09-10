@@ -14,15 +14,13 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "^5.0.1",
     "sass": "^1.66.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "lint": "eslint src/**/*.{js,jsx}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx}",
     "format": "prettier --write src/**/*.{js,jsx,scss} --config ./.prettierrc",
@@ -47,12 +45,15 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.4",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.33.2",
     "prettier": "3.0.3",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^11.0.0"
+    "stylelint-config-standard-scss": "^11.0.0",
+    "vite": "^4.4.9",
+    "vite-plugin-svgr": "^3.2.0"
   }
 }
