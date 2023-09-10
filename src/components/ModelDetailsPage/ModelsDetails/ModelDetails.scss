@@ -39,11 +39,8 @@
     .risk-circles {
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       margin-top: 20px;
-      @media (max-width: 768px) {
-        flex-wrap: nowrap;
-      }
     }
 
     .risk-circle {
