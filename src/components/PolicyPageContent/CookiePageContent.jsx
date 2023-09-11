@@ -15,7 +15,7 @@ const CookiePageContent = ({ jsonData }) => {
       <div className='policypagecontent_container'>
         {cookieTitle && (
           <div className='policypagecontent_container_title'>
-            <h1 className='title pageTitle'>{cookieTitle}</h1>
+            <h1 className='title page-title'>{cookieTitle}</h1>
           </div>
         )}
         <div className='policypagecontent_container_text'>

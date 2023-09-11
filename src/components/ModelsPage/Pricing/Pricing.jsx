@@ -8,11 +8,11 @@ const Pricing = () => {
       <div className="pricing_container">
         <h2 className="h2Regular">
           Pricing table tollitur gratia, quae sunt vincla concordiae from{" "}
-          <span className="price spancolor">49,90</span>
-          <span className="spancolor">$</span> per month
+          <span className="price span-color">49,90</span>
+          <span className="span-color">$</span> per month
         </h2>
         <div className="pricing_container_buttons">
-          <Link to={'/pricing'} className="btn-nobg pricingbutton" type="button">
+          <Link to={'/pricing'} className="btn-nobg pricing-button" type="button">
             View pricing table <i className="fa-solid fa-dollar-sign"></i>
           </Link>
           <button className="btn-bg" type="button">

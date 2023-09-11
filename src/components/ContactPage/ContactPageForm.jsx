@@ -21,7 +21,7 @@ const ContactPageForm = ({ inquiryTypes }) => {
   return (
     <div className="contactpage">
       <div className="contactpage_container">
-        <p className="contactpageparagraph subheading">Contact</p>
+        <p className="contactpage-paragraph subheading">Contact</p>
         <h1 className="title">Quae per vinitorem</h1>
         <form>
           <div className="dropdown input_group">
@@ -115,7 +115,7 @@ const ContactPageForm = ({ inquiryTypes }) => {
           </div>
         </form>
 
-        <p className="subheading lasttext">
+        <p className="subheading last-text">
           Quantegis LTD (Quantegis d.o.o.) Radnička cesta 80, Zagreb, Croatia. <br />
           VAT ID: HR59864814633
         </p>

@@ -16,7 +16,7 @@ const PricingTable = () => {
           );
           return (
             <Fragment key={category}>
-              <h1 className="h2Regular categoryTitle">{category}</h1>
+              <h1 className="h2Regular category-title">{category}</h1>
               {categoryItems.map((titleItem) => {
                 const title = titleItem.title;
                 const titleItems = pricing.filter(
@@ -82,17 +82,17 @@ const PricingTable = () => {
                                     <tr key={key}>
                                       <td>
                                         <div className="firstrow">
-                                          <span className="titleText">
+                                          <span className="title-text">
                                             {name}
                                           </span>
-                                          <span className="priceText">
+                                          <span className="price-text">
                                             {isLastItemInGroup
                                               ? `${formattedValueMin} + €`
                                               : `${formattedValueMin} - ${formattedValueMax} €`}
                                           </span>
                                         </div>
                                       </td>
-                                      <td className="costText">{`€ ${formattedCost}`}</td>
+                                      <td className="cost-text">{`€ ${formattedCost}`}</td>
                                     </tr>
                                   );
                                 }

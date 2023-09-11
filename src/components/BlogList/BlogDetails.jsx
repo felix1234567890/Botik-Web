@@ -51,7 +51,7 @@ const BlogDetails = () => {
           <div className='blog_image'>
             <img src={selectedBlog.photo} alt={selectedBlog.title} />
           </div>
-          <p className='subheading blogText'>{selectedBlog.text}</p>
+          <p className='subheading blog-text'>{selectedBlog.text}</p>
         </div>
       </div>
       <div className='bottomcard'>

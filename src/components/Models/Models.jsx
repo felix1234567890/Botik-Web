@@ -23,7 +23,7 @@ const Models = ({ enableButton }) => {
             />
           ))}
         </div>
-        <p className="subheading ptext">
+        <p className="subheading p-text">
           Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius,
           tamen expetitur propter voluptatem. De illis, cum volemus. Sed nimis
           multa. Mihi enim satis est, ipsis non satis. Pauca mutat vel plura
@@ -31,7 +31,7 @@ const Models = ({ enableButton }) => {
         </p>
 
         {enableButton ? (
-          <button type="button" className="btn-bg enabledbutton">
+          <button type="button" className="btn-bg enabled-button">
             Sign up now <i className="fa-solid fa-arrow-right"></i>
           </button>
         ) : null}

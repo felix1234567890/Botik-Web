@@ -34,12 +34,12 @@ const ModelDetails = () => {
     <>
       <div className="modeldetails">
         <div className="modeldetails_container">
-          <p className="modelname subheading">{model.subtitle}</p>
+          <p className="model-name subheading">{model.subtitle}</p>
           <h1 className="title">
             Modestiam vel temperantiam, quae est moderatio
           </h1>
           <div className="risk-circles">{renderRiskCircles(10, 10)}</div>
-          <p className="subheading longtext">
+          <p className="subheading long-text">
             Transfer idem ad modestiam vel temperantiam, quae est moderatio
             cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus
             quibusdam est saepe iucundius, tamen expetitur propter voluptatem.

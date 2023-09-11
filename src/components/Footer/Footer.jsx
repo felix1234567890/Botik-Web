@@ -24,7 +24,7 @@ function Footer() {
     <>
       <footer>
         <div className="footer">
-          <a className="logoDiv">
+          <a className="logo-Div">
             <img alt="logo" src={logoFooter} />
           </a>
           <ul>

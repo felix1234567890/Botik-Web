@@ -49,7 +49,7 @@ const BlogList = ({ choices, Blogs }) => {
   return (
     <div className='bloglist'>
       <div className='bloglist_container'>
-        <p className='blogparagraph subheading'>Blog</p>
+        <p className='blog-paragraph subheading'>Blog</p>
         <h1 className='title'>Articles</h1>
         <ul>
           {choices.map((choice, index) => (

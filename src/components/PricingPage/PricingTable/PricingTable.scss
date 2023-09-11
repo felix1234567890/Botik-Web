@@ -11,7 +11,7 @@
     flex-direction: column;
     gap: 50px;
 
-    .categoryTitle {
+    .category-title {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -20,7 +20,6 @@
 
     .table_container {
       width: 100%;
-      
 
       h4 {
         font-family: $big-font;
@@ -98,16 +97,16 @@
         }
       }
 
-      .titleText,
-      .priceText,
-      .costText {
+      .title-text,
+      .price-text,
+      .cost-text {
         font-family: $small-font;
         font-size: $text-mini;
         color: #0f172a;
       }
 
-      .titleText,
-      .costText {
+      .title-text,
+      .cost-text {
         font-weight: 600;
       }
     }
