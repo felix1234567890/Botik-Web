@@ -1,7 +1,10 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { Blogs as blogs } from "../../json/data";
 import BlogLandingCard from "./BlogLandingCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+ faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 import "./BlogLanding.scss";
 
 const BlogLanding = () => {
@@ -21,9 +24,9 @@ const BlogLanding = () => {
       <div className="bloglanding_container">
         <h2 className="h2Regular">Blog</h2>
         <div className="bloglanding_container_cards">{blogsCardComponent}</div>
-        <NavLink to="/bloglist" className="btn-bg">
-          View all posts <i className="fa-solid fa-arrow-right"></i>
-        </NavLink>
+        <Link href="/bloglist" className="btn-bg">
+          View all posts <FontAwesomeIcon icon={faArrowRight} />
+        </Link>
       </div>
     </div>
   );

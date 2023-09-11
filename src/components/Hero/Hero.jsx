@@ -1,4 +1,4 @@
-import React from "react";
+import Image from 'next/image'
 import "./Hero.scss";
 import phoneImg from "../../assets/phone.webp";
 import browserImg from "../../assets/browser.webp";
@@ -21,8 +21,8 @@ const Hero = () => {
             </button>
           </div>
           <div className="col-2">
-            <img alt="phone" src={phoneImg} className="phone" />
-            <img alt="browser" src={browserImg} className="browser" />
+            <Image alt="phone" src={phoneImg} className="phone" />
+            <Image alt="browser" src={browserImg} className="browser" />
           </div>
         </div>
       </div>

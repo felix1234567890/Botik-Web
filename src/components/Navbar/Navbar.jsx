@@ -1,23 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+'use client'
+import { useState, useEffect } from "react";
+import Link from "next/link";
+// import { withRouter } from 'next/router'
 import "./Navbar.scss";
 import logo from "../../assets/logo.svg";
-
+import Image from 'next/image'
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const location = useLocation();
-  const [currentLocation, setCurrentLocation] = useState("");
+  // const location = router.pathname
+  // const [currentLocation, setCurrentLocation] = useState("");
 
-  useEffect(() => {
-    setCurrentLocation(location.pathname);
-  }, [location]);
+  // useEffect(() => {
+  //   setCurrentLocation(location.pathname);
+  // }, [location]);
 
-  useEffect(() => {
-    if (location.pathname !== currentLocation) {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location, currentLocation]);
+  // useEffect(() => {
+  //   if (location.pathname !== currentLocation) {
+  //     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //   }
+  // }, [location, currentLocation]);
 
 
   const handleScroll = () => {
@@ -49,13 +51,13 @@ const Navbar = () => {
     <>
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
-          <NavLink to="/">
-            <img alt="logo" src={logo} />
-          </NavLink>
+          <Link href="/">
+            <Image alt="logo" src={logo} />
+          </Link>
           <ul>
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink to={link.to}>{link.text}</NavLink>
+                <Link href={link.to}>{link.text}</Link>
               </li>
             ))}
           </ul>
@@ -77,7 +79,7 @@ const Navbar = () => {
         <ul>
           {navLinks.map((link, index) => (
             <li key={index} onClick={toggleMobile}>
-              <NavLink to={link.to}>{link.text}</NavLink>
+              <Link href={link.to}>{link.text}</Link>
             </li>
           ))}
           <button className="btn-nobg" type="button">
@@ -92,4 +94,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar

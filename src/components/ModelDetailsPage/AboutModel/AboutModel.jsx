@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+'use client'
+import  { useState } from "react";
+import Link from "next/link";
 import "./AboutModel.scss";
 
 const AboutModel = ({ choices, backgroundcolor }) => {
@@ -14,13 +15,12 @@ const AboutModel = ({ choices, backgroundcolor }) => {
         </h2>
         <ul>
           {choices.map((choice, index) => (
-            <li key={index}>
-              <NavLink
+            <li key={index}
                 onClick={() => setSelectedChoice(choice.title)}
                 className={selectedChoice === choice.title ? "selected" : ""}
               >
                 {choice.title}
-              </NavLink>
+      
             </li>
           ))}
         </ul>

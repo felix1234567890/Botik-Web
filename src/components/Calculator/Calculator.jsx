@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+'use client'
+import { useState } from "react"
 import "./Calculator.scss"
 import { models_info as modelsInfo } from "../../json/data"
 

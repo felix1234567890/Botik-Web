@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import "./Pricing.scss";
 
 const Pricing = () => {
@@ -12,7 +11,7 @@ const Pricing = () => {
           <span className="span-color">$</span> per month
         </h2>
         <div className="pricing_container_buttons">
-          <Link to={'/pricing'} className="btn-nobg pricing-button" type="button">
+          <Link href={'/pricing'} className="btn-nobg pricing-button" type="button">
             View pricing table <i className="fa-solid fa-dollar-sign"></i>
           </Link>
           <button className="btn-bg" type="button">

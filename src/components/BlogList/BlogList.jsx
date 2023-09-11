@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"
-import { NavLink } from "react-router-dom"
+import { useState, useEffect } from "react"
+import Link from "next/link";
 import BlogLandingCard from "../BlogLanding/BlogLandingCard"
 import "./BlogList.scss"
 
@@ -54,12 +54,12 @@ const BlogList = ({ choices, blogs }) => {
         <ul>
           {choices.map((choice, index) => (
             <li key={index}>
-              <NavLink
+              <Link
                 onClick={() => filterBlogsByCategory(choice.title)}
                 className={selectedChoice === choice.title ? "selected" : ""}
               >
                 {choice.title}
-              </NavLink>
+              </Link>
             </li>
           ))}
         </ul>

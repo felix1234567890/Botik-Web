@@ -1,4 +1,3 @@
-import React from "react"
 import PolicyPageContent from "../components/PolicyPageContent/PolicyPageContent"
 import privacyData from "../json/privacyData.json"
 

@@ -1,11 +1,13 @@
-import React from "react"
-import { useParams, useNavigate } from "react-router-dom"
+'use client'
+ 
+import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import { Blogs as blogs } from "../../json/data"
 import "./BlogDetails.scss"
 
 const BlogDetails = () => {
+  const router = useRouter()
   const { blogId } = useParams()
-  const navigate = useNavigate()
   const selectedBlog = blogs.find(
     (blog) => `${blog.title}-${blog.category}` === blogId
   )
@@ -37,7 +39,7 @@ const BlogDetails = () => {
 
   const navigateToNextBlog = () => {
     if (nextBlog) {
-      navigate(`/bloglist/${nextBlog.title}-${nextBlog.category}`)
+      router.push(`/bloglist/${nextBlog.title}-${nextBlog.category}`)
     }
   }
 
@@ -49,7 +51,7 @@ const BlogDetails = () => {
           <h1 className='title'>{selectedBlog.title}</h1>
           <p className='paragraphs date'>{selectedBlog.date}</p>
           <div className='blog_image'>
-            <img src={selectedBlog.photo} alt={selectedBlog.title} />
+            <Image src={selectedBlog.photo} alt={selectedBlog.title} />
           </div>
           <p className='subheading blog-text'>{selectedBlog.text}</p>
         </div>

@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import "./B2BPlan.scss";
 import { TbPhone } from "react-icons/tb";
 
@@ -15,7 +14,7 @@ const B2BPlan = () => {
           diligens sui.
         </p>
         <div className="plan_container_buttons">
-          <Link to={"/contact"} className="btn-bg" type="button">
+          <Link href={"/contact"} className="btn-bg" type="button">
             Contact Us
             <TbPhone size={20} />
           </Link>

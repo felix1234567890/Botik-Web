@@ -1,4 +1,3 @@
-import React from "react";
 import ModelsListCard from "./ModelsListCard";
 import "./ModelsList.scss";
 import { models_info as modelsInfo } from "../../../json/data";

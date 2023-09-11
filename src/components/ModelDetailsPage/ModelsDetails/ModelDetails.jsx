@@ -1,4 +1,3 @@
-import React from "react"
 import { useParams } from "react-router-dom"
 import "./ModelDetails.scss"
 import { models_info as modelsInfo } from "../../../json/data"

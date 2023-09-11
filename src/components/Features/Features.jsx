@@ -1,4 +1,3 @@
-import React from "react";
 import "./Features.scss";
 import { features_info as featuresInfo } from "../../json/data";
 import FeaturesBox from "./FeaturesBox";

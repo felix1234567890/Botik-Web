@@ -1,4 +1,3 @@
-import React from "react"
 import "../src/styles/styles.scss"
 import { Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar/Navbar"
@@ -31,13 +30,13 @@ function App() {
   ]
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Routes>
         {routesConfig.map((route, index) => (
           <Route key={index} path={route.path} element={<route.component />} />
         ))}
       </Routes>
-      <Footer />
+      <Footer /> */}
     </>
   )
 }

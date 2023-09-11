@@ -1,4 +1,3 @@
-import React from "react";
 import StrategyCard from "./StrategyCard";
 import { strategy_info as strategyInfo } from "../../../json/data";
 import "./Strategy.scss";
