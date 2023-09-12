@@ -1,20 +1,22 @@
-'use client'
- 
-import { useRouter } from 'next/navigation'
-import Image from 'next/image'
-import { Blogs as blogs } from "../../json/data"
+"use client"
+import { useRouter, useParams } from "next/navigation"
+import Image from "next/image"
+import { Blogs as blogs } from "../../../json/data"
 import "./BlogDetails.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const BlogDetails = () => {
   const router = useRouter()
-  const { blogId } = useParams()
+  let { slug } = useParams()
+  slug = decodeURIComponent(slug)
   const selectedBlog = blogs.find(
-    (blog) => `${blog.title}-${blog.category}` === blogId
+    (blog) => `${blog.title}-${blog.category}` === slug
   )
 
   const findNextBlogInCategory = () => {
     const currentIndex = blogs.findIndex(
-      (blog) => `${blog.title}-${blog.category}` === blogId
+      (blog) => `${blog.title}-${blog.category}` === slug
     )
 
     if (currentIndex !== -1) {
@@ -39,7 +41,7 @@ const BlogDetails = () => {
 
   const navigateToNextBlog = () => {
     if (nextBlog) {
-      router.push(`/bloglist/${nextBlog.title}-${nextBlog.category}`)
+      router.push(`/blogs/${nextBlog.title}-${nextBlog.category}`)
     }
   }
 
@@ -51,7 +53,7 @@ const BlogDetails = () => {
           <h1 className='title'>{selectedBlog.title}</h1>
           <p className='paragraphs date'>{selectedBlog.date}</p>
           <div className='blog_image'>
-            <Image src={selectedBlog.photo} alt={selectedBlog.title} />
+            <Image height={569} width={853} src={selectedBlog.photo} alt={selectedBlog.title} />
           </div>
           <p className='subheading blog-text'>{selectedBlog.text}</p>
         </div>
@@ -65,7 +67,7 @@ const BlogDetails = () => {
             className='btn-nobg'
             onClick={navigateToNextBlog}
           >
-            Go to article <i className='fa-solid fa-arrow-right'></i>
+            Go to article <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
       </div>

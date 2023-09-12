@@ -2,6 +2,10 @@
 import { useState } from "react"
 import "./Calculator.scss"
 import { models_info as modelsInfo } from "../../json/data"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+ faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const Calculator = ({
   backgroundColor,
@@ -135,7 +139,7 @@ const Calculator = ({
 
         <h5 className='h5Regular'>Comprehensum, quod cognitum non habet?</h5>
         <button type='button' className='btn-bg btn-next'>
-          Get Started <i className='fa-solid fa-arrow-right'></i>
+          Get Started <FontAwesomeIcon icon={faArrowRight}/>
         </button>
       </div>
     </div>

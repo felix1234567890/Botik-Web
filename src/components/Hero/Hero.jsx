@@ -2,6 +2,10 @@ import Image from 'next/image'
 import "./Hero.scss";
 import phoneImg from "../../assets/phone.webp";
 import browserImg from "../../assets/browser.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+ faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
@@ -17,7 +21,7 @@ const Hero = () => {
               massa mi.
             </p>
             <button type="button" className="btn-bg">
-              Get Started <i className="fa-solid fa-arrow-right"></i>
+              Get Started <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>
           <div className="col-2">

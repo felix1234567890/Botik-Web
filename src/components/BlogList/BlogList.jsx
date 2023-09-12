@@ -1,3 +1,4 @@
+'use client'
 import { useState, useEffect } from "react"
 import Link from "next/link";
 import BlogLandingCard from "../BlogLanding/BlogLandingCard"
@@ -54,12 +55,12 @@ const BlogList = ({ choices, blogs }) => {
         <ul>
           {choices.map((choice, index) => (
             <li key={index}>
-              <Link
+              <a
                 onClick={() => filterBlogsByCategory(choice.title)}
                 className={selectedChoice === choice.title ? "selected" : ""}
               >
                 {choice.title}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>

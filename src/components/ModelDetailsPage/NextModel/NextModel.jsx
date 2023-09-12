@@ -1,9 +1,15 @@
-import { useParams } from "react-router-dom";
+
+import { useParams } from 'next/navigation'
 import "./NextModel.scss";
 import { models_info as modelsInfo } from "../../../json/data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+ faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const NextModel = () => {
-  const { id } = useParams();
+  let { id } = useParams();
+  id = decodeURIComponent(id)
   const currentIndex = modelsInfo.findIndex((model) => model.subtitle === id);
   const nextIndex = (currentIndex + 1) % modelsInfo.length;
   const nextModel = modelsInfo[nextIndex];
@@ -41,7 +47,7 @@ const NextModel = () => {
         </h2>
         <div className="risk-circles">{renderRiskCircles(10, 10)}</div>
         <button onClick={handleNextModelClick} className="btn-nobg">
-          View {nextModel.title} <i className="fa-solid fa-arrow-right"></i>
+          View {nextModel.title} <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
     </div>

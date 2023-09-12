@@ -1,6 +1,6 @@
-import BlogList from "../components/BlogList/BlogList"
-import BottomCard from "../components/BottomCard/BottomCard"
-import { Blogs as blogs } from "../json/data"
+import BlogList from "../../components/BlogList/BlogList"
+import BottomCard from "../../components/BottomCard/BottomCard"
+import { Blogs as blogs } from "../../json/data"
 
 const BlogListPage = () => {
   return (

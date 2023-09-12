@@ -1,6 +1,10 @@
 import { models_info as modelsInfo } from "../../json/data";
 import Card from "./Card";
 import "./Models.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+ faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const Models = ({ enableButton }) => {
   return (
@@ -31,7 +35,7 @@ const Models = ({ enableButton }) => {
 
         {enableButton ? (
           <button type="button" className="btn-bg enabled-button">
-            Sign up now <i className="fa-solid fa-arrow-right"></i>
+            Sign up now <FontAwesomeIcon icon={faArrowRight} />
           </button>
         ) : null}
       </div>

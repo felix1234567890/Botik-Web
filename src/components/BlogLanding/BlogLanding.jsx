@@ -24,7 +24,7 @@ const BlogLanding = () => {
       <div className="bloglanding_container">
         <h2 className="h2Regular">Blog</h2>
         <div className="bloglanding_container_cards">{blogsCardComponent}</div>
-        <Link href="/bloglist" className="btn-bg">
+        <Link href="/blogs" className="btn-bg">
           View all posts <FontAwesomeIcon icon={faArrowRight} />
         </Link>
       </div>

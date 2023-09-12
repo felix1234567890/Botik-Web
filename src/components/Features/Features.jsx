@@ -1,6 +1,10 @@
 import "./Features.scss";
 import { features_info as featuresInfo } from "../../json/data";
 import FeaturesBox from "./FeaturesBox";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+ faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
 
 const Features = () => {
   return (
@@ -20,7 +24,7 @@ const Features = () => {
           ))}
         </div>
         <button type="button" className="btn-bg">
-          Get Started <i className="fa-solid fa-arrow-right"></i>
+          Get Started <FontAwesomeIcon icon={faArrowRight}/>
         </button>
       </div>
     </div>

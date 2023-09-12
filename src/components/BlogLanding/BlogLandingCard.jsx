@@ -6,7 +6,7 @@ const BlogLandingCard = ({ photo, title, category, text, id }) => {
   const router = useRouter()
   
   function handleBlogClick(blogId) {
-    router.push(`/bloglist/${blogId}`)
+    router.push(`/blogs/${blogId}`)
   }
 
   return (

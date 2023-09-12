@@ -1,11 +1,14 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "next/navigation"
 import "./ModelDetails.scss"
 import { models_info as modelsInfo } from "../../../json/data"
 import Calculator from "../../Calculator/Calculator"
 import { riskColors } from "../../../utils"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const ModelDetails = () => {
-  const { id } = useParams()
+  let { id } = useParams()
+  id = decodeURIComponent(id)
   const model = modelsInfo.find((model) => model.subtitle === id)
   const riskColor = riskColors[model?.risk] || "#32BEEB"
 
@@ -25,14 +28,14 @@ const ModelDetails = () => {
 
   return (
     <>
-      <div className="modeldetails">
-        <div className="modeldetails_container">
-          <p className="model-name subheading">{model.subtitle}</p>
-          <h1 className="title">
+      <div className='modeldetails'>
+        <div className='modeldetails_container'>
+          <p className='model-name subheading'>{model.subtitle}</p>
+          <h1 className='title'>
             Modestiam vel temperantiam, quae est moderatio
           </h1>
-          <div className="risk-circles">{renderRiskCircles(10, 10)}</div>
-          <p className="subheading long-text">
+          <div className='risk-circles'>{renderRiskCircles(10, 10)}</div>
+          <p className='subheading long-text'>
             Transfer idem ad modestiam vel temperantiam, quae est moderatio
             cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus
             quibusdam est saepe iucundius, tamen expetitur propter voluptatem.
@@ -41,7 +44,7 @@ const ModelDetails = () => {
             quod beatissimum. Comprehensum, quod cognitum non habet?
           </p>
           <button type='button' className='btn-bg'>
-            Get Started <i className='fa-solid fa-arrow-right'></i>
+            Get Started <FontAwesomeIcon icon={faArrowRight} />
           </button>
           <div className='modeldetails_container_boxes'>
             <div className='box'>
