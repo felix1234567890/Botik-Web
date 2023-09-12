@@ -1,4 +1,3 @@
-'use client'
 import ModelDetails from "../../../components/ModelDetailsPage/ModelsDetails/ModelDetails"
 import AboutModel from "../../../components/ModelDetailsPage/AboutModel/AboutModel"
 import Pricing from "../../../components/ModelsPage/Pricing/Pricing"

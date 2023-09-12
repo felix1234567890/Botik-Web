@@ -1,4 +1,3 @@
-'use client'
 import Hero from "../components/Hero/Hero"
 import Models from "../components/Models/Models"
 import Calculator from "../components/Calculator/Calculator"

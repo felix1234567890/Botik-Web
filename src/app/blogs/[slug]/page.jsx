@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useRouter, useParams } from "next/navigation"
 import Image from "next/image"
 import { Blogs as blogs } from "../../../json/data"

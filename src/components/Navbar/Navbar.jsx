@@ -1,7 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
 import Link from "next/link"
-// import { withRouter } from 'next/router'
 import "./Navbar.scss"
 import logo from "../../assets/logo.svg"
 import Image from "next/image"
@@ -10,18 +9,6 @@ import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons"
 const Navbar = () => {
   const [sticky, setSticky] = useState(false)
   const [mobile, setMobile] = useState(false)
-  // const location = router.pathname
-  // const [currentLocation, setCurrentLocation] = useState("");
-
-  // useEffect(() => {
-  //   setCurrentLocation(location.pathname);
-  // }, [location]);
-
-  // useEffect(() => {
-  //   if (location.pathname !== currentLocation) {
-  //     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  //   }
-  // }, [location, currentLocation]);
 
   const handleScroll = () => {
     setSticky(window.scrollY > 150)

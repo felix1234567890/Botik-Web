@@ -1,4 +1,4 @@
-
+'use client'
 import { useParams } from 'next/navigation'
 import "./NextModel.scss";
 import { models_info as modelsInfo } from "../../../json/data";

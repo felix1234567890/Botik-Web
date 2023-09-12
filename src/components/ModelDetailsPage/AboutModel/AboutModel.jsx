@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react"
-import Link from "next/link"
 import "./AboutModel.scss"
 
 const AboutModel = ({ choices, backgroundcolor }) => {
