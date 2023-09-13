@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import { riskColors } from "../../../utils"
+import { riskColors } from "../../../lib/utils"
 import "./ModelsList.scss";
 
 const ModelsListCard = ({ title, text, risk, id }) => {

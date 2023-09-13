@@ -3,7 +3,7 @@ import { useParams } from "next/navigation"
 import "./ModelDetails.scss"
 import { models_info as modelsInfo } from "../../../json/data"
 import Calculator from "../../Calculator/Calculator"
-import { riskColors } from "../../../utils"
+import { riskColors } from "../../../lib/utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 

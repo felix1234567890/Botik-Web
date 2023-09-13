@@ -1,12 +1,14 @@
-'use client'
+"use client"
 import { useRouter, useParams } from "next/navigation"
 import Image from "next/image"
 import { Blogs as blogs } from "../../../json/data"
 import "./BlogDetails.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { useEffect, useState } from "react"
 
 const BlogDetails = () => {
+  const [nextBlog, setNextBlog] = useState()
   const router = useRouter()
   let { slug } = useParams()
   slug = decodeURIComponent(slug)
@@ -37,7 +39,7 @@ const BlogDetails = () => {
     return null
   }
 
-  const nextBlog = findNextBlogInCategory()
+  useEffect(() => setNextBlog(findNextBlogInCategory()), [])
 
   const navigateToNextBlog = () => {
     if (nextBlog) {
@@ -53,7 +55,12 @@ const BlogDetails = () => {
           <h1 className='title'>{selectedBlog.title}</h1>
           <p className='paragraphs date'>{selectedBlog.date}</p>
           <div className='blog_image'>
-            <Image height={569} width={853} src={selectedBlog.photo} alt={selectedBlog.title} />
+            <Image
+              height={569}
+              width={853}
+              src={selectedBlog.photo}
+              alt={selectedBlog.title}
+            />
           </div>
           <p className='subheading blog-text'>{selectedBlog.text}</p>
         </div>
@@ -61,7 +68,7 @@ const BlogDetails = () => {
       <div className='bottomcard'>
         <div className='bottomcard_container'>
           <p className='subheading'>Read Next</p>
-          <h2 className='h2Regular'>{nextBlog.title}</h2>
+          <h2 className='h2Regular'>{nextBlog?.title}</h2>
           <button
             type='button'
             className='btn-nobg'

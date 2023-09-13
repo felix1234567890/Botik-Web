@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import { riskColors } from "../../utils"
+import { riskColors } from "../../lib/utils"
 
 const Card = ({ title, risk, text, mostPopular, id }) => {
   const riskColor = riskColors[risk] || "#32BEEB";
