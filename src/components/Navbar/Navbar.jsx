@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import "./Navbar.scss"
-import logo from "../../assets/logo.svg"
 import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons"
@@ -39,7 +38,7 @@ const Navbar = () => {
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className='navbar'>
           <Link href='/'>
-            <Image alt='logo' src={logo} />
+            <Image width={100} height={100} alt='logo' src="/assets/logo.svg" />
           </Link>
           <ul>
             {navLinks.map((link, index) => (

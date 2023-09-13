@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import "./Hero.scss";
-import phoneImg from "../../assets/phone.webp";
-import browserImg from "../../assets/browser.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
  faArrowRight
@@ -25,8 +23,8 @@ const Hero = () => {
             </button>
           </div>
           <div className="col-2">
-            <Image alt="phone" src={phoneImg} className="phone" />
-            <Image alt="browser" src={browserImg} className="browser" />
+            <Image alt="phone" width={800} height={600} src="/assets/phone.webp" className="phone" />
+            <Image alt="browser"  width={800} height={600} src="/assets/browser.webp" className="browser" />
           </div>
         </div>
       </div>

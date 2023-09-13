@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from 'next/image'
 import "./Footer.scss";
 import { FiFacebook, FiLinkedin, FiInstagram } from "react-icons/fi";
-import logoFooter from "../../assets/logoFooter.svg";
 
 function Footer() {
   const navLinks = [
@@ -26,7 +25,7 @@ function Footer() {
       <footer>
         <div className="footer">
           <a className="logo-Div">
-            <Image alt="logo" src={logoFooter} />
+            <Image alt="logo" width={100} height={100} src="/assets/logoFooter.svg" />
           </a>
           <ul>
             {navLinks.map((link, index) => (
