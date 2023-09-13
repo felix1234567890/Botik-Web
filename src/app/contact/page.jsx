@@ -1,10 +1,7 @@
-import React from "react"
-import ContactPageForm from "../components/ContactPage/ContactPageForm"
+import ContactPageForm from "../../components/ContactPage/ContactPageForm"
 
 const ContactPage = () => {
-  return (
-    <>
-      <ContactPageForm
+  return  <ContactPageForm
         inquiryTypes={[
           { title: "Message" },
           { title: "Voice" },
@@ -12,8 +9,6 @@ const ContactPage = () => {
           { title: "Bbb" }
         ]}
       />
-    </>
-  )
 }
 
 export default ContactPage

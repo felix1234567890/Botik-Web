@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutBoxes.scss";
 
 const Box = ({ text }) => (

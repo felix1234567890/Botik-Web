@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react"
-import { NavLink } from "react-router-dom"
+'use client'
+import { useState, useEffect } from "react"
 import BlogLandingCard from "../BlogLanding/BlogLandingCard"
 import "./BlogList.scss"
 
-const BlogList = ({ choices, Blogs }) => {
+const BlogList = ({ choices, blogs }) => {
   const [selectedChoice, setSelectedChoice] = useState(choices[0].title)
-  const [filteredBlogs, setFilteredBlogs] = useState(Blogs)
+  const [filteredBlogs, setFilteredBlogs] = useState(blogs)
   const [currentPage, setCurrentPage] = useState(1)
   const blogsPerPage = 12
   const [paginatedBlogs, setPaginatedBlogs] = useState([])
@@ -13,9 +13,9 @@ const BlogList = ({ choices, Blogs }) => {
 
   const filterBlogsByCategory = (category) => {
     if (category === "All posts") {
-      setFilteredBlogs(Blogs)
+      setFilteredBlogs(blogs)
     } else {
-      const filtered = Blogs.filter((blog) => blog.category === category)
+      const filtered = blogs.filter((blog) => blog.category === category)
       setFilteredBlogs(filtered)
     }
     setSelectedChoice(category)
@@ -54,12 +54,12 @@ const BlogList = ({ choices, Blogs }) => {
         <ul>
           {choices.map((choice, index) => (
             <li key={index}>
-              <NavLink
+              <a
                 onClick={() => filterBlogsByCategory(choice.title)}
                 className={selectedChoice === choice.title ? "selected" : ""}
               >
                 {choice.title}
-              </NavLink>
+              </a>
             </li>
           ))}
         </ul>

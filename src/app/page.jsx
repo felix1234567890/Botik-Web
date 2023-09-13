@@ -1,4 +1,3 @@
-import React from "react"
 import Hero from "../components/Hero/Hero"
 import Models from "../components/Models/Models"
 import Calculator from "../components/Calculator/Calculator"
@@ -10,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Models />
+      <Models enableButton={false} />
       <Calculator backgroundColor='#FFF' />
       <Features />
       <Testimonials />

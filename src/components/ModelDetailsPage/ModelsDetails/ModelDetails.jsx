@@ -1,45 +1,42 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import "./ModelDetails.scss";
-import { models_info } from "../../../json/data";
-import Calculator from "../../Calculator/Calculator";
-
-const riskColors = {
-  2: "#32BEEB",
-  3: "#10B981",
-  4: "#F59E0B",
-  5: "#B91C1C",
-};
+'use client'
+import { useParams } from "next/navigation"
+import "./ModelDetails.scss"
+import { models_info as modelsInfo } from "../../../json/data"
+import Calculator from "../../Calculator/Calculator"
+import { riskColors } from "../../../utils"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const ModelDetails = () => {
-  const { id } = useParams();
-  const model = models_info.find((model) => model.subtitle === id);
-  const riskColor = riskColors[model.risk] || "#32BEEB";
+  let { id } = useParams()
+  id = decodeURIComponent(id)
+  const model = modelsInfo.find((model) => model.subtitle === id)
+  const riskColor = riskColors[model?.risk] || "#32BEEB"
 
   const renderRiskCircles = (width, height) => {
-    return Array.from({ length: model.risk }, (_, index) => (
+    return Array.from({ length: model?.risk }, (_, index) => (
       <div
         key={index}
-        className="risk-circle"
+        className='risk-circle'
         style={{
           backgroundColor: riskColor,
           width: `${width}px`,
-          height: `${height}px`,
+          height: `${height}px`
         }}
       ></div>
-    ));
-  };
+    ))
+  }
 
   return (
     <>
-      <div className="modeldetails">
-        <div className="modeldetails_container">
-          <p className="model-name subheading">{model.subtitle}</p>
-          <h1 className="title">
+      <div className='modeldetails'>
+        <div className='modeldetails_container'>
+          <p className='model-name subheading'>{model.subtitle}</p>
+          <h1 className='title'>
             Modestiam vel temperantiam, quae est moderatio
           </h1>
-          <div className="risk-circles">{renderRiskCircles(10, 10)}</div>
-          <p className="subheading long-text">
+          <div className='risk-circles'>{renderRiskCircles(10, 10)}</div>
+          <p className='subheading long-text'>
             Transfer idem ad modestiam vel temperantiam, quae est moderatio
             cupiditatum rationi oboediens. Quod, inquit, quamquam voluptatibus
             quibusdam est saepe iucundius, tamen expetitur propter voluptatem.
@@ -47,31 +44,35 @@ const ModelDetails = () => {
             non satis. Pauca mutat vel plura sane; Bork Tibi hoc incredibile,
             quod beatissimum. Comprehensum, quod cognitum non habet?
           </p>
-          <button type="button" className="btn-bg">
-            Get Started <i className="fa-solid fa-arrow-right"></i>
+          <button type='button' className='btn-bg'>
+            Get Started <FontAwesomeIcon icon={faArrowRight} />
           </button>
-          <div className="modeldetails_container_boxes">
-            <div className="box">
-              <h5 className="h5Regular">
+          <div className='modeldetails_container_boxes'>
+            <div className='box'>
+              <h5 className='h5Regular'>
                 Comprehensum quod cognitum non habet
               </h5>
             </div>
-            <div className="box">
-              <h5 className="h5Regular">Risk</h5>
-              <div className="risk-circles">{renderRiskCircles(18, 18)}</div>
+            <div className='box'>
+              <h5 className='h5Regular'>Risk</h5>
+              <div className='risk-circles'>{renderRiskCircles(18, 18)}</div>
             </div>
-            <div className="box">
-              <h5 className="h5Regular">Subscription</h5>
-              <h5 className="h5Regular">
+            <div className='box'>
+              <h5 className='h5Regular'>Subscription</h5>
+              <h5 className='h5Regular'>
                 <span>from 49,90$</span>
               </h5>
             </div>
           </div>
         </div>
       </div>
-      <Calculator selectedModelId={model.title} backgroundColor="#FFF" modelCalculator={true} />
+      <Calculator
+        selectedModelId={model?.title}
+        backgroundColor='#FFF'
+        modelCalculator={true}
+      />
     </>
-  );
-};
+  )
+}
 
-export default ModelDetails;
+export default ModelDetails

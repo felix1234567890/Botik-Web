@@ -1,29 +1,33 @@
-import React from "react"
-import { useParams, useNavigate } from "react-router-dom"
-import { Blogs } from "../../json/data"
+'use client'
+import { useRouter, useParams } from "next/navigation"
+import Image from "next/image"
+import { Blogs as blogs } from "../../../json/data"
 import "./BlogDetails.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const BlogDetails = () => {
-  const { blogId } = useParams()
-  const navigate = useNavigate()
-  const selectedBlog = Blogs.find(
-    (blog) => `${blog.title}-${blog.category}` === blogId
+  const router = useRouter()
+  let { slug } = useParams()
+  slug = decodeURIComponent(slug)
+  const selectedBlog = blogs.find(
+    (blog) => `${blog.title}-${blog.category}` === slug
   )
 
   const findNextBlogInCategory = () => {
-    const currentIndex = Blogs.findIndex(
-      (blog) => `${blog.title}-${blog.category}` === blogId
+    const currentIndex = blogs.findIndex(
+      (blog) => `${blog.title}-${blog.category}` === slug
     )
 
     if (currentIndex !== -1) {
       let nextIndex = currentIndex + 1
       while (nextIndex !== currentIndex) {
-        if (nextIndex >= Blogs.length) {
+        if (nextIndex >= blogs.length) {
           nextIndex = 0
         }
 
-        if (Blogs[nextIndex].category === selectedBlog.category) {
-          return Blogs[nextIndex]
+        if (blogs[nextIndex].category === selectedBlog.category) {
+          return blogs[nextIndex]
         }
 
         nextIndex++
@@ -37,7 +41,7 @@ const BlogDetails = () => {
 
   const navigateToNextBlog = () => {
     if (nextBlog) {
-      navigate(`/bloglist/${nextBlog.title}-${nextBlog.category}`)
+      router.push(`/blogs/${nextBlog.title}-${nextBlog.category}`)
     }
   }
 
@@ -49,7 +53,7 @@ const BlogDetails = () => {
           <h1 className='title'>{selectedBlog.title}</h1>
           <p className='paragraphs date'>{selectedBlog.date}</p>
           <div className='blog_image'>
-            <img src={selectedBlog.photo} alt={selectedBlog.title} />
+            <Image height={569} width={853} src={selectedBlog.photo} alt={selectedBlog.title} />
           </div>
           <p className='subheading blog-text'>{selectedBlog.text}</p>
         </div>
@@ -63,7 +67,7 @@ const BlogDetails = () => {
             className='btn-nobg'
             onClick={navigateToNextBlog}
           >
-            Go to article <i className='fa-solid fa-arrow-right'></i>
+            Go to article <FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
       </div>
