@@ -1,3 +1,4 @@
+import React from "react";
 import "./PricingPageHero.scss";
 
 const PricingPageHero = () => {

@@ -61,7 +61,7 @@ nav {
 }
 
 .hamburger-menu {
-  display: none !important;
+  display: none;
   font-size: $h2-size;
 
   @media (max-width: 768px) {

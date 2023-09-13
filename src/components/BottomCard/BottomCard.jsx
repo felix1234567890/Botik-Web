@@ -1,6 +1,5 @@
+import React from "react"
 import "./BottomCard.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const BottomCard = () => {
   return (
@@ -9,7 +8,7 @@ const BottomCard = () => {
         <p className='subheading'>Try now</p>
         <h2 className='h2Regular'>Lorem ipsum dolor sit amet</h2>
         <button type='button' className='btn-nobg'>
-          Sign up now <FontAwesomeIcon icon={faArrowRight} />
+          Sign up now <i className='fa-solid fa-arrow-right'></i>
         </button>
       </div>
     </div>

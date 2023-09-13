@@ -1,6 +1,13 @@
-import Link from "next/link";
+import React from "react";
+import { Link } from "react-router-dom";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import { riskColors } from "../../utils"
+
+const riskColors = {
+  2: "#32BEEB",
+  3: "#10B981",
+  4: "#F59E0B",
+  5: "#B91C1C",
+};
 
 const Card = ({ title, risk, text, mostPopular, id }) => {
   const riskColor = riskColors[risk] || "#32BEEB";
@@ -31,7 +38,7 @@ const Card = ({ title, risk, text, mostPopular, id }) => {
         <button type="button" className="btn-bg">
           Choose
         </button>
-        <Link href={`/models/${id}`} className="info btn-nobg">
+        <Link to={`/models/${id}`} className="info btn-nobg">
           <AiOutlineInfoCircle size={16} className="icon" />
           More info
         </Link>

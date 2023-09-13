@@ -1,5 +1,5 @@
+import React from "react";
 import "./AboutHero.scss";
-import Image from 'next/image'
 import browserTop from "../../../assets/lighttopbar.webp";
 import browserbg from "../../../assets/browserbackground.webp";
 
@@ -12,8 +12,8 @@ const AboutHero = () => {
           Modestiam vel temperantiam, quae est moderatio
         </h1>
         <div className="abouthero_container_image">
-          <Image src={browserTop} alt="browser top" />
-          <Image src={browserbg} alt="browser bg" />
+          <img src={browserTop} alt="browser top" />
+          <img src={browserbg} alt="browser bg" />
         </div>
         <h2 className="h2Regular second-title">
           Transfer idem ad modestiam vel temperantiam, quae est moderatio

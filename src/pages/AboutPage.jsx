@@ -1,40 +1,44 @@
-import ModelDetails from "../../../components/ModelDetailsPage/ModelsDetails/ModelDetails"
-import AboutModel from "../../../components/ModelDetailsPage/AboutModel/AboutModel"
-import Pricing from "../../../components/ModelsPage/Pricing/Pricing"
-import Features from "../../../components/Features/Features"
-import Testimonials from "../../../components/Testimonials/Testimonials"
-import NextModel from "../../../components/ModelDetailsPage/NextModel/NextModel"
+import AboutHero from "../components/AboutPage/AboutHero/AboutHero"
+import AboutBoxes from "../components/AboutPage/AboutBoxes/AboutBoxes"
+import Features from "../components/Features/Features"
+import AboutModel from "../components/ModelDetailsPage/AboutModel/AboutModel"
+import Models from "../components/Models/Models"
 
-const ModelsDetailsPage = () => {
+const AboutPage = () => {
   return (
     <>
-      <ModelDetails />
+      <AboutHero />
+      <AboutBoxes
+        boxContents={[
+          "Comprehensum quod cognitum non habet",
+          "Comprehensum quod cognitum non habets",
+          "Comprehensum quod cognitum non habetfafas"
+        ]}
+      />
+      <Features />
       <AboutModel
-        backgroundcolor='#f8fafc'
+        backgroundcolor='#fff'
         choices={[
           {
-            title: "General model info",
+            title: "Algorithm",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete"
           },
           {
-            title: "Performance table",
+            title: "Science behind",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete"
           },
           {
-            title: "Graph",
+            title: "Track record",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat aequius Triarium aliquid de dissensione nostra iudicare. Dolor ergo, id est summum malum, metuetur semper, etiamsi non aderit; Praeteritis, inquit, gaudeo. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. Duo Reges: constructio interrete"
           }
         ]}
       />
-      <Pricing />
-      <Features />
-      <Testimonials />
-      <NextModel />
+      <Models enableButton={true} />
     </>
   )
 }
 
-export default ModelsDetailsPage
+export default AboutPage

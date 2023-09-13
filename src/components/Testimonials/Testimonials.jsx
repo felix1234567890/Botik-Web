@@ -1,4 +1,4 @@
-'use client'
+import React from "react";
 import { testimonialsInfo } from "../../json/data";
 import TestiominalsCard from "./TestiominalsCard";
 import "./Testimonials.scss";

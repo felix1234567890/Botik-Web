@@ -1,24 +1,15 @@
-'use client'
-import { useState } from "react"
+import React, { useState } from "react"
 import "./Calculator.scss"
-import { models_info as modelsInfo } from "../../json/data"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
- faArrowRight
-} from "@fortawesome/free-solid-svg-icons";
+import { models_info } from "../../json/data"
 
-const Calculator = ({
-  backgroundColor,
-  selectedModelId = null,
-  modelCalculator = false
-}) => {
+const Calculator = ({ backgroundColor, selectedModelId, modelCalculator = false }) => {
   const [investmentAmount, setInvestmentAmount] = useState("")
   const [profit, setProfit] = useState(null)
   const [showEarnings, setShowEarnings] = useState(false)
 
   const handleInvestmentChange = (event) => {
     const inputValue = event.target.value
-    if (!isNaN(inputValue) && inputValue > 0) {
+    if (/^\d*\.?\d+$/.test(inputValue) && parseFloat(inputValue) >= 0) {
       setInvestmentAmount(inputValue)
     } else {
       setInvestmentAmount("")
@@ -56,7 +47,7 @@ const Calculator = ({
                   Select a Model
                 </option>
                 {modelCalculator
-                  ? modelsInfo.map((model, index) => (
+                  ? models_info.map((model, index) => (
                       <option
                         key={index}
                         value={model.title}
@@ -68,7 +59,7 @@ const Calculator = ({
                         {model.title}
                       </option>
                     ))
-                  : modelsInfo.map((model, index) => (
+                  : models_info.map((model, index) => (
                       <option key={index} value={model.title}>
                         {model.title}
                       </option>
@@ -139,7 +130,7 @@ const Calculator = ({
 
         <h5 className='h5Regular'>Comprehensum, quod cognitum non habet?</h5>
         <button type='button' className='btn-bg btn-next'>
-          Get Started <FontAwesomeIcon icon={faArrowRight}/>
+          Get Started <i className='fa-solid fa-arrow-right'></i>
         </button>
       </div>
     </div>

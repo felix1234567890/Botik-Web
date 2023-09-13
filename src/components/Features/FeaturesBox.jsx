@@ -1,3 +1,5 @@
+import React from "react";
+
 const FeaturesBox = ({ title, icon, text }) => {
   return (
     <div className="features-box">

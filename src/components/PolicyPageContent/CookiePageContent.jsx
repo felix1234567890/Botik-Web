@@ -1,3 +1,4 @@
+import React from "react"
 import "./PolicyPageContent.scss"
 
 const CookiePageContent = ({ jsonData }) => {

@@ -1,10 +1,7 @@
-import { models_info as modelsInfo } from "../../json/data";
+import React from "react";
+import { models_info } from "../../json/data";
 import Card from "./Card";
 import "./Models.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
- faArrowRight
-} from "@fortawesome/free-solid-svg-icons";
 
 const Models = ({ enableButton }) => {
   return (
@@ -15,14 +12,14 @@ const Models = ({ enableButton }) => {
           cupiditatum rationi oboediens
         </h2>
         <div className="cards">
-          {modelsInfo.map((model, index) => (
+          {models_info.map((model, index) => (
             <Card
               key={index}
               title={model.title}
               risk={model.risk}
               text={model.text}
               mostPopular={model.most_popular}
-              id={model.subtitle}
+              id={`${model.subtitle}`}
             />
           ))}
         </div>
@@ -35,7 +32,7 @@ const Models = ({ enableButton }) => {
 
         {enableButton ? (
           <button type="button" className="btn-bg enabled-button">
-            Sign up now <FontAwesomeIcon icon={faArrowRight} />
+            Sign up now <i className="fa-solid fa-arrow-right"></i>
           </button>
         ) : null}
       </div>

@@ -1,3 +1,5 @@
+import React from "react";
+
 const StrategyCard = ({ icon, title, text}) => {
   return (
     <div className="strategy-box">

@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Image from 'next/image'
+import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 import { FiFacebook, FiLinkedin, FiInstagram } from "react-icons/fi";
 import logoFooter from "../../assets/logoFooter.svg";
@@ -26,34 +25,34 @@ function Footer() {
       <footer>
         <div className="footer">
           <a className="logo-Div">
-            <Image alt="logo" src={logoFooter} />
+            <img alt="logo" src={logoFooter} />
           </a>
           <ul>
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.to}>
+                <NavLink to={link.to}>
                   {link.text}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
           <span>
-            <Link href="https://www.facebook.com" target="_blank">
+            <NavLink to="https://www.facebook.com" target="_blank">
               <FiFacebook size={24} />
-            </Link>
-            <Link href="https://www.linkedin.com" target="_blank">
+            </NavLink>
+            <NavLink to="https://www.linkedin.com" target="_blank">
               <FiLinkedin size={24} />
-            </Link>
-            <Link href="https://www.instagram.com/" target="_blank">
+            </NavLink>
+            <NavLink to="https://www.instagram.com/" target="_blank">
               <FiInstagram size={24} />
-            </Link>
+            </NavLink>
           </span>
         </div>
         <div className="policies">
           <ul>
             {footerLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.to}>{link.text}</Link>
+                <NavLink to={link.to}>{link.text}</NavLink>
               </li>
             ))}
           </ul>

@@ -1,18 +1,15 @@
-'use client'
-import { useRouter } from 'next/navigation'
-import Image from 'next/image'
+import React from "react"
 
 const BlogLandingCard = ({ photo, title, category, text, id }) => {
-  const router = useRouter()
-  
+
   function handleBlogClick(blogId) {
-    router.push(`/blogs/${blogId}`)
+    window.location.href = `/bloglist/${blogId}`
   }
 
   return (
     <div className='blogCard' onClick={() => handleBlogClick(id)}>
       <div className='blogCard_icon'>
-        <Image width={146} height={146} src={photo} alt='User Icon' />
+        <img src={photo} alt='User Icon' />
       </div>
       <div className='blogCard_details'>
         <p className='blogCard_details_title'>{title}</p>

@@ -1,6 +1,7 @@
-import BlogList from "../../components/BlogList/BlogList"
-import BottomCard from "../../components/BottomCard/BottomCard"
-import { Blogs as blogs } from "../../json/data"
+import React from "react"
+import BlogList from "../components/BlogList/BlogList"
+import BottomCard from "../components/BottomCard/BottomCard"
+import { Blogs } from "../json/data"
 
 const BlogListPage = () => {
   return (
@@ -13,9 +14,10 @@ const BlogListPage = () => {
           { title: "Crypto begginers" },
           { title: "Academy" }
         ]}
-        blogs={blogs}
+
+        Blogs={Blogs}
       />
-      <BottomCard />
+      <BottomCard/>
     </>
   )
 }
