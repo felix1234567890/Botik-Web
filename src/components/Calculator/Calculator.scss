@@ -78,13 +78,13 @@
           }
 
           .input-icon {
-            background: url("../../assets/dollarIcon.svg"), #fff;
+            background: url("/assets/dollarIcon.svg"), #fff;
             background-repeat: no-repeat, repeat;
             background-position: right 1.2em top 50%, 0 0;
           }
 
           input[type="date"]::-webkit-calendar-picker-indicator {
-            background: url("../../assets/calendar.svg");
+            background: url("/assets/calendar.svg");
             padding: 5px;
           }
 
@@ -92,7 +92,7 @@
             -moz-appearance: none;
             -webkit-appearance: none;
             appearance: none;
-            background-image: url("../../assets/dropdownarrow.svg");
+            background-image: url("/assets/dropdownarrow.svg");
             background-repeat: no-repeat, repeat;
             background-position: right 1.2em top 50%, 0 0;
           }
