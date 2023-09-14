@@ -1,3 +1,4 @@
+import '../styles/styles.scss'
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import Navbar from "../components/Navbar/Navbar"
